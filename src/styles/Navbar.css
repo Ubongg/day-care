@@ -1,0 +1,116 @@
+.nav-center {
+  padding: 5px 10px 10px 10px;
+}
+.nav-center.shadow {
+  /* background: var(--mainWhite); */
+  box-shadow: var(--light-shadow);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.nav-toggle {
+  font-size: 1.8rem;
+  padding-top: 8px;
+  color: var(--mainBlue);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+.nav-toggle.show {
+  color: red;
+}
+.logo {
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+  font-family: Segoe UI;
+}
+.logo span {
+  color: var(--secColor);
+  font-family: Segoe UI;
+}
+.links a {
+  color: var(--mainBlack);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  margin: 3rem 1.5rem;
+  transition: var(--mainTransition);
+  text-align: start;
+}
+.links a:hover {
+  color: var(--secColor);
+  margin-left: 1.2rem;
+  transition: var(--mainTransition);
+}
+.social-icons {
+  display: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+.show-container {
+  height: 10rem;
+}
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log button {
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  background: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  border-radius: var(--radius);
+  padding: 10px;
+  transition: var(--mainTransition);
+  margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 970px) {
+  .nav-center {
+    width: 100%;
+    margin: -1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .nav-center.shadow {
+    box-shadow: none;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding-top: 5px;
+    color: var(--mainBlack);
+    margin-right: 15px;
+  }
+  .links a:hover {
+    color: var(--secColor);
+    margin-left: 1.5rem;
+  }
+  .log {
+    display: none;
+  }
+}

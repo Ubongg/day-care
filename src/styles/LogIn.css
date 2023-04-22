@@ -282,10 +282,12 @@ a {
     color: #0c0101;
     cursor: pointer;
     letter-spacing: var(--spacing);
+    transition: var(--mainTransition);
   }
 
   .forgot-pass:hover {
-    color: red;
+    color: var(--primary-red);
+    transition: var(--mainTransition);
   }
 
   .cont .sub-cont {

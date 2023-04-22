@@ -1,8 +1,28 @@
 html {
   --primaryColor: rgb(2, 66, 100);
   --hoverColor: rgb(21, 118, 145);
+  --secColor: rgb(226, 185, 89);
+  --mainGrey: #617d98;
+  --mainBlack: #000;
   --mainWhite: #fff;
+  --mainTransition: all 0.3s linear;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --fixed-width: 50rem;
+  --dark-blue: #1a4755;
+  --primary-red: #bb2525;
+  --light-red: #e66b6b;
+  --light-grey: rgb(245, 245, 245);
+  --radius: 0.25rem;
+  --spacing: 0.1rem;
+  --small-spacing: 0.5px;
 }
+
+body {
+  background: var(--mainWhite);
+  overflow-x: hidden !important;
+}
+
 *,
 *::before,
 *::after {
@@ -10,4 +30,19 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button,
+a {
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+  /* text-align: center; */
+  font-size: 0.9rem;
+  -webkit-appearance: none;
 }

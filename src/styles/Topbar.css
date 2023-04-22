@@ -1,5 +1,4 @@
 html {
-  --secColor: rgb(226, 185, 89);
   --spacing: 0.3px;
   --lineHeight: 25px;
 }
@@ -17,6 +16,7 @@ html {
   padding: 0 10px;
   border-right: 1px solid black;
   position: relative;
+  font-size: 14px;
 }
 .info p .icon {
   color: var(--secColor);
@@ -40,4 +40,9 @@ html {
   color: var(--primaryColor);
   background-color: white;
   padding: 17px 15px;
+}
+@media screen and (max-width: 970px) {
+  .topbar {
+    display: none;
+  }
 }
