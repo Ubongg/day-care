@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 .nav-toggle {
   font-size: 1.8rem;
@@ -24,30 +24,30 @@
   transform: rotate(90deg);
 }
 .nav-toggle.show {
-  color: red;
+  color: var(--primary-red);
 }
 .logo {
   color: var(--primaryColor);
   font-size: 1.2rem;
-  font-family: Segoe UI;
+  font-family: "Fredoka One", cursive;
 }
 .logo span {
   color: var(--secColor);
-  font-family: Segoe UI;
+  font-family: "Fredoka One", cursive;
 }
 .links a {
-  color: var(--mainBlack);
+  color: var(--primaryColor);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   display: block;
-  margin: 3rem 1.5rem;
+  margin: 3rem 0.5rem;
   transition: var(--mainTransition);
   text-align: start;
 }
 .links a:hover {
   color: var(--secColor);
-  margin-left: 1.2rem;
+  margin-left: 0.7rem;
   transition: var(--mainTransition);
 }
 .social-icons {
@@ -66,14 +66,17 @@
   justify-content: center;
   align-items: center;
 }
-.log button {
-  text-transform: uppercase;
+.log a {
+  /* text-transform: uppercase; */
   color: var(--mainWhite);
-  background: var(--dark-blue);
-  border: 1px solid var(--dark-blue);
+  background: var(--secColor);
   border-radius: var(--radius);
   padding: 10px;
   transition: var(--mainTransition);
+  margin: 0 1.5rem;
+}
+.log a:hover {
+  color: white;
   margin: 0 1.5rem;
 }
 
@@ -85,6 +88,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
+    position: sticky;
   }
   .nav-center.shadow {
     box-shadow: none;

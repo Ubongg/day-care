@@ -40,25 +40,25 @@ const Navbar = () => {
       </div>
       <div className="links-container" ref={linksContainerRef}>
         <ul className="links" ref={linksRef}>
-          <li>
+          <li onClick={toggleLinks}>
             <NavLink to="/">Home</NavLink>
           </li>
-          <li>
+          <li onClick={toggleLinks}>
             <NavLink to="/about">About</NavLink>{" "}
           </li>
-          <li>
+          <li onClick={toggleLinks}>
             <NavLink to="/pricing">Pricing</NavLink>{" "}
           </li>
-          <li>
+          <li onClick={toggleLinks}>
             <NavLink to="/team">Team</NavLink>{" "}
           </li>
-          <li>
+          <li onClick={toggleLinks}>
             <NavLink to="/blog">Blog</NavLink>{" "}
           </li>
-          <li>
+          <li onClick={toggleLinks}>
             <NavLink to="/contact">Contact</NavLink>{" "}
           </li>
-          <li className="log">
+          <li className="log" onClick={toggleLinks}>
             <NavLink to="/login">Log In</NavLink>
           </li>
         </ul>
