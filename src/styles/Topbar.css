@@ -1,0 +1,43 @@
+html {
+  --secColor: rgb(226, 185, 89);
+  --spacing: 0.3px;
+  --lineHeight: 25px;
+}
+.topbar {
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+}
+.info {
+  display: flex;
+}
+.info p {
+  padding: 0 10px;
+  border-right: 1px solid black;
+  position: relative;
+}
+.info p .icon {
+  color: var(--secColor);
+  position: absolute;
+  top: 1.5px;
+}
+.info p .text {
+  padding: 0 0 0 20px;
+  color: white;
+}
+.topLinks {
+  display: flex;
+}
+/* .topLinks .span {
+  color: white;
+}
+.topLinks .icon {
+  color: white;
+} */
+.topLinks .login a {
+  color: var(--primaryColor);
+  background-color: white;
+  padding: 17px 15px;
+}
