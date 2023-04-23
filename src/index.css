@@ -16,6 +16,7 @@ html {
   --radius: 0.25rem;
   --spacing: 0.1rem;
   --small-spacing: 0.5px;
+  --line-height: 25px;
 }
 
 body {

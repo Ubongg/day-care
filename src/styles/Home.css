@@ -136,3 +136,73 @@
 .homeSec1 .box p {
   padding: 10px 0 0 0;
 }
+.home-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
+}
+.home-about-col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.home-about-col1 h6 {
+  color: var(--secColor);
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  font-family: "Fredoka One", cursive;
+}
+.home-about-col1 h3 {
+  color: var(--primaryColor);
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+}
+.home-about-col1 p {
+  line-height: var(--line-height);
+}
+.home-about-col1-imgBx {
+  padding-bottom: 20px;
+}
+.home-about-col2 {
+  margin-bottom: 10px;
+}
+.home-about-col2-list {
+  padding-bottom: 20px;
+}
+.home-about-col2-list li {
+  padding-bottom: 6px;
+  color: var(--primaryColor);
+  font-size: 1.1rem;
+}
+.home-about-col2-list li::before {
+  content: "·";
+  font-size: 100px;
+  vertical-align: middle;
+  line-height: 20px;
+  color: var(--secColor);
+}
+.home-about-col2-list p {
+  line-height: var(--line-height);
+  padding-left: 25px;
+}
+.home-about button {
+  display: flex;
+  justify-content: left;
+  align-self: flex-start;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+.home-about button a {
+  text-transform: capitalize;
+  color: var(--mainWhite);
+  background: var(--secColor);
+  border: 1px solid var(--secColor);
+  border-radius: var(--radius);
+  padding: 10px 40px;
+}
