@@ -38,6 +38,7 @@
   border: 1px solid var(--secColor);
   border-radius: var(--radius);
   padding: 10px 40px;
+  font-size: 1.1rem;
 }
 .heroImg {
   margin-bottom: 60px;
@@ -141,7 +142,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 20px;
+  margin: 70px 20px;
 }
 .home-about-col1 {
   display: flex;
@@ -153,7 +154,7 @@
 }
 .home-about-col1 h6 {
   color: var(--secColor);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-bottom: 10px;
   font-family: "Fredoka One", cursive;
 }
@@ -197,6 +198,7 @@
   align-items: center;
   border: none;
   background: transparent;
+  margin-bottom: 10px;
 }
 .home-about button a {
   text-transform: capitalize;
@@ -205,4 +207,61 @@
   border: 1px solid var(--secColor);
   border-radius: var(--radius);
   padding: 10px 40px;
+  font-size: 1.1rem;
+}
+.home-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 30px 20px;
+  background-color: rgb(245, 245, 245);
+}
+.home-features-reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-features-reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-features-reason .imgBx {
+  /* background-color: red; */
+  padding: 18px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+.home-features-reason .imgBx img {
+  /* background-color: red; */
+  padding: 10px 0;
+  border-radius: 50%;
+  width: 70%;
+  height: 80%;
+}
+.home-features-reason .imgBx.one {
+  background-color: rgb(152, 88, 152);
+}
+.home-features-reason .imgBx.two {
+  background-color: rgb(255, 86, 114);
+}
+.home-features-reason .imgBx.three {
+  background-color: rgb(81, 81, 137);
+}
+.home-features-reason .imgBx.four {
+  background-color: rgb(235, 109, 109);
+}
+.home-features-reason .imgBx.five {
+  background-color: rgb(222, 8, 80);
+}
+.home-features-reason h3 {
+  color: var(--primaryColor);
+}
+.home-features .home-about-col1 h3 {
+  font-size: 1.8rem;
 }

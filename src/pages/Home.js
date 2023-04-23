@@ -6,6 +6,11 @@ import hm from "../assets/hm.png";
 import et from "../assets/et.png";
 import pa from "../assets/pa.png";
 import curly from "../assets/curlylines.png";
+import kc from "../assets/kc.png";
+import fds from "../assets/fds.png";
+import qt from "../assets/qt.png";
+import pa2 from "../assets/pa2.png";
+import lmr from "../assets/lmr.png";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -105,6 +110,47 @@ const Home = () => {
         <button>
           <NavLink to="/login">Join Us</NavLink>
         </button>
+      </div>
+      <div className="home-features">
+        <div className="home-about-col1">
+          <h6>Features</h6>
+          <h3>Why Choose Us</h3>
+          <div className="home-about-col1-imgBx">
+            <img src={curly} alt="" />
+          </div>
+        </div>
+        <div className="home-features-reasons">
+          <div className="home-features-reason">
+            <div className="imgBx one">
+              <img src={kc} alt="" />
+            </div>
+            <h3>Knowledge Classes</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx two">
+              <img src={fds} alt="" />
+            </div>
+            <h3>Full Day Session</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx three">
+              <img src={qt} alt="" />
+            </div>
+            <h3>Qualified Teacher</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx four">
+              <img src={pa2} alt="" />
+            </div>
+            <h3>Play Area</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx five">
+              <img src={lmr} alt="" />
+            </div>
+            <h3>Last Minute Request</h3>
+          </div>
+        </div>
       </div>
     </div>
   );
