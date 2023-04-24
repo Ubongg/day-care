@@ -1,3 +1,6 @@
+.home p {
+  font-size: 1.1rem;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -41,10 +44,15 @@
   font-size: 1.1rem;
 }
 .heroImg {
-  /* margin-bottom: 10px; */
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 235px;
+}
+.heroImgBx {
+  width: 100%;
+  height: 100%;
 }
 .heroImgBx img {
   width: 100%;
@@ -165,7 +173,7 @@
   padding-bottom: 20px;
 }
 .home-about-col2 {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 .home-about-col2-list {
   padding-bottom: 20px;
@@ -360,9 +368,7 @@
 .home-plan .textBx h3 {
   font-size: 1.8rem;
 }
-.home-plan .textBx p {
-  font-size: 1.1rem;
-}
+
 .home-plan .textBx button {
   border: none;
   background: transparent;
