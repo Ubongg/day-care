@@ -268,7 +268,8 @@
 .home-features .home-about-col1 h3,
 .home-program .home-about-col1 h3,
 .home-event .home-about-col1 h3,
-.home-plan .home-about-col1 h3 {
+.home-plan .home-about-col1 h3,
+.home-testimonials .home-about-col1 h3 {
   font-size: 1.8rem;
 }
 .home-program {
@@ -346,10 +347,10 @@
   text-align: center;
 }
 .home-plan .textBx.one {
-  background-color: rgb(212, 164, 106);
+  background-color: rgb(169, 157, 143);
 }
 .home-plan .textBx.two {
-  background-color: rgb(212, 132, 106);
+  background-color: rgb(196, 140, 121);
 }
 .home-plan .textBx.three {
   background-color: rgb(138, 120, 162);
@@ -381,4 +382,56 @@
   border-radius: var(--radius);
   padding: 10px 40px;
   font-size: 1.1rem;
+}
+.home-testimonials {
+  background-color: rgb(139, 180, 191);
+  margin: 10px 0;
+  padding: 50px 20px;
+}
+.home-testimonials .home-about-col1 h6 {
+  color: white;
+}
+.home-testimonials .textBxs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.home-testimonials .textBx {
+  width: 340px;
+  margin: 20px;
+  padding: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 4px;
+}
+.home-testimonials .textBx .imgBx {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.home-testimonials .textBx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.home-testimonials .textBx p {
+  font-family: "Fredoka One", cursive;
+  color: var(--primaryColor);
+}
+.home-testimonials .textBx h3 {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-weight: 600;
+  color: var(--secColor);
 }

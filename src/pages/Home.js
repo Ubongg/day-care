@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import hero from "../assets/hero3.webp";
 import lf from "../assets/l&f.png";
@@ -6,6 +6,7 @@ import hm from "../assets/hm.png";
 import et from "../assets/et.png";
 import pa from "../assets/pa.png";
 import curly from "../assets/curlylines.png";
+import curlyw from "../assets/curlyw.png";
 import kc from "../assets/kc.png";
 import fds from "../assets/fds.png";
 import qt from "../assets/qt.png";
@@ -14,6 +15,9 @@ import lmr from "../assets/lmr.png";
 import nm from "../assets/nm.png";
 import nur from "../assets/nur.png";
 import ppa from "../assets/ppa.png";
+import parent1 from "../assets/parent1.png";
+import parent2 from "../assets/parent2.png";
+import parent3 from "../assets/parent3.png";
 import "../styles/Home.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -31,8 +35,6 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
   };
-
-  const slider = useRef(Slider);
 
   return (
     <div className="home">
@@ -388,6 +390,50 @@ const Home = () => {
           <button>
             <NavLink to="/pricing">Choose Plan</NavLink>
           </button>
+        </div>
+      </div>
+      <div className="home-testimonials">
+        <div className="home-about-col1">
+          <h6>Testimonials</h6>
+          <h3>What Parents Say</h3>
+          <div className="home-about-col1-imgBx">
+            <img src={curlyw} alt="" />
+          </div>
+        </div>
+        <div className="textBxs">
+          <div className="textBx">
+            <div className="imgBx">
+              <img src={parent1} alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              dignissimos ea nam veritatis natus veniam amet reprehenderit non,
+              aperiam modi!
+            </p>
+            <h3>John Doe</h3>
+          </div>
+          <div className="textBx">
+            <div className="imgBx">
+              <img src={parent2} alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              dignissimos ea nam veritatis natus veniam amet reprehenderit non,
+              aperiam modi!
+            </p>
+            <h3>Josh Buttler</h3>
+          </div>
+          <div className="textBx">
+            <div className="imgBx">
+              <img src={parent3} alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              dignissimos ea nam veritatis natus veniam amet reprehenderit non,
+              aperiam modi!
+            </p>
+            <h3>Mark Smith</h3>
+          </div>
         </div>
       </div>
     </div>

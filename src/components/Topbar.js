@@ -1,12 +1,8 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaRegClock } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
 import "../styles/Topbar.css";
 
 const Topbar = () => {
