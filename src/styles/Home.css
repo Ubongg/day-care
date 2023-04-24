@@ -41,15 +41,10 @@
   font-size: 1.1rem;
 }
 .heroImg {
-  margin-bottom: 60px;
+  /* margin-bottom: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 350px;
-}
-.heroImgBx {
-  width: 100%;
-  height: 100%;
 }
 .heroImgBx img {
   width: 100%;
@@ -150,18 +145,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .home-about-col1 h6 {
   color: var(--secColor);
   font-size: 1.3rem;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-family: "Fredoka One", cursive;
 }
 .home-about-col1 h3 {
   color: var(--primaryColor);
   font-size: 1.4rem;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .home-about-col1 p {
   line-height: var(--line-height);
@@ -215,7 +210,7 @@
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-  padding: 30px 20px;
+  padding: 50px 20px;
   background-color: rgb(245, 245, 245);
 }
 .home-features-reasons {
@@ -262,6 +257,122 @@
 .home-features-reason h3 {
   color: var(--primaryColor);
 }
-.home-features .home-about-col1 h3 {
+.home-features .home-about-col1 h3,
+.home-program .home-about-col1 h3,
+.home-event .home-about-col1 h3,
+.home-plan .home-about-col1 h3 {
   font-size: 1.8rem;
+}
+.home-program {
+  margin: 50px 0;
+}
+.home-program button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  margin: 30px auto;
+}
+.home-program button a {
+  color: var(--mainWhite);
+  background: var(--secColor);
+  border: 1px solid var(--secColor);
+  border-radius: var(--radius);
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}
+.home-event {
+  margin: 10px 0;
+  padding: 50px 20px 20px 20px;
+  background-color: rgb(245, 245, 245);
+}
+.home-eventBx {
+  background-color: white;
+  padding: 40px 40px 20px 40px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-bottom: 35px;
+}
+.home-eventBx .time {
+  color: var(--secColor);
+  display: flex;
+}
+.home-eventBx .time .icon {
+  margin-right: 2px;
+}
+.home-eventBx .textBx {
+  padding: 15px 0;
+}
+.home-eventBx .textBx h3 {
+  padding-bottom: 10px;
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+}
+
+.home-eventBx .textBx p {
+  padding-bottom: 15px;
+  line-height: var(--line-height);
+}
+.home-eventBx .textBx a {
+  display: flex;
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
+.home-eventBx .textBx a .icon {
+  margin-top: 2px;
+}
+.home-plan {
+  margin: 10px 0;
+  padding: 50px 20px;
+}
+.home-plan .textBx.one,
+.home-plan .textBx.two,
+.home-plan .textBx.three {
+  margin-bottom: 35px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.home-plan .textBx.one {
+  background-color: rgb(212, 164, 106);
+}
+.home-plan .textBx.two {
+  background-color: rgb(212, 132, 106);
+}
+.home-plan .textBx.three {
+  background-color: rgb(138, 120, 162);
+}
+
+.home-plan .textBx h3,
+.home-plan .textBx h2,
+.home-plan .textBx p,
+.home-plan .textBx button {
+  padding-bottom: 15px;
+  color: white;
+}
+.home-plan .textBx h2 {
+  font-size: 2.5rem;
+}
+.home-plan .textBx h3 {
+  font-size: 1.8rem;
+}
+.home-plan .textBx p {
+  font-size: 1.1rem;
+}
+.home-plan .textBx button {
+  border: none;
+  background: transparent;
+  margin-top: 15px;
+}
+.home-plan .textBx button a {
+  text-transform: capitalize;
+  color: var(--primaryColor);
+  background: white;
+  border-radius: var(--radius);
+  padding: 10px 40px;
+  font-size: 1.1rem;
 }
