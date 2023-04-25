@@ -16,9 +16,16 @@ import about from "../assets/landlead.png";
 import parent1 from "../assets/parent1.png";
 import parent2 from "../assets/parent2.png";
 import parent3 from "../assets/parent3.png";
+import st from "../assets/st.png";
+import ht from "../assets/ht.png";
+import at from "../assets/at.png";
 import "../styles/Home.css";
 import { FaRegClock } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
+import { TiSocialFacebook } from "react-icons/ti";
+import { TiSocialTwitter } from "react-icons/ti";
+import { TiSocialGooglePlus } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
 import Imgslider from "../components/Imgslider";
 
 const Home = () => {
@@ -361,6 +368,80 @@ const Home = () => {
               aperiam modi!
             </p>
             <h3>Mark Smith</h3>
+          </div>
+        </div>
+      </div>
+      <div className="home-member">
+        <div className="home-about-col1">
+          <h6>Member</h6>
+          <h3>Our Stuff</h3>
+          <div className="home-about-col1-imgBx">
+            <img src={curly} alt="" />
+          </div>
+        </div>
+        <div className="boxes">
+          <div className="box">
+            <div className="imgBx">
+              <img src={st} alt="" />
+            </div>
+            <h3>Angelina Kapry</h3>
+            <p>Senior Teacher</p>
+            <div className="socials">
+              <span>
+                <TiSocialFacebook />
+              </span>
+              <span>
+                <TiSocialTwitter />
+              </span>
+              <span>
+                <TiSocialGooglePlus />
+              </span>
+              <span>
+                <TiSocialLinkedin />
+              </span>
+            </div>
+          </div>
+          <div className="box">
+            <div className="imgBx">
+              <img src={ht} alt="" />
+            </div>
+            <h3>Martin Luther</h3>
+            <p>Head Teacher</p>
+            <div className="socials">
+              <span>
+                <TiSocialFacebook />
+              </span>
+              <span>
+                <TiSocialTwitter />
+              </span>
+              <span>
+                <TiSocialGooglePlus />
+              </span>
+              <span>
+                <TiSocialLinkedin />
+              </span>
+            </div>
+          </div>
+          <div className="box">
+            <div className="imgBx">
+              <img src={at} alt="" />
+            </div>
+            <h3>Mrs Barbara</h3>
+            <p>Assistant Teacher</p>
+            <div className="socials">
+              <span>
+                <TiSocialFacebook />
+              </span>
+              <span>
+                <TiSocialTwitter />
+              </span>
+              <span>
+                <TiSocialGooglePlus />
+              </span>
+              <span>
+                <TiSocialLinkedin />
+              </span>
+            </div>
           </div>
         </div>
       </div>

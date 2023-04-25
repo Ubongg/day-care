@@ -281,6 +281,7 @@
 .home-program .home-about-col1 h3,
 .home-event .home-about-col1 h3,
 .home-plan .home-about-col1 h3,
+.home-member .home-about-col1 h3,
 .home-testimonials .home-about-col1 h3 {
   font-size: 1.8rem;
 }
@@ -470,5 +471,61 @@
   font-size: 1rem;
   margin-top: 20px;
   font-weight: 600;
+  color: var(--secColor);
+}
+.home-member {
+  margin: 10px 0;
+  padding: 50px 0;
+}
+.home-member .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home-member .boxes .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding-top: 40px;
+  margin: 20px;
+  transition: var(--mainTransition);
+}
+.home-member .boxes .box:hover {
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.05);
+}
+.home-member .boxes .box .imgBx img {
+  border: 1px solid var(--light-grey);
+  border-radius: 50%;
+  transition: var(--mainTransition);
+}
+.home-member .boxes .box .imgBx img:hover {
+  border: 1px solid var(--secColor);
+}
+.home-member .boxes .box h3 {
+  margin-top: 30px;
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+}
+.home-member .boxes .box p {
+  margin-top: 10px;
+  color: var(--secColor);
+}
+.home-member .boxes .box .socials {
+  background-color: var(--secColor);
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+}
+.home-member .boxes .box .socials span {
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 10px 10px 5px 10px;
+  font-size: 1.5rem;
   color: var(--secColor);
 }
