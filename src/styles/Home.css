@@ -4,6 +4,8 @@
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* background-color: rgb(240, 246, 253); */
   background-color: rgb(248, 246, 242);
   padding: 60px 20px;
@@ -44,11 +46,12 @@
   font-size: 1.1rem;
 }
 .heroImg {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 235px;
+  height: 360px;
+  max-width: 540px;
 }
 .heroImgBx {
   width: 100%;
@@ -74,10 +77,10 @@
 }
 .homeSec1 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 50px 20px;
+  margin: 50px 0;
 }
 .homeSec1 .box {
   display: flex;
@@ -85,8 +88,9 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 3px 14px #ebebeb;
-  margin: 30px 20px;
+  margin: 20px;
   position: relative;
+  max-width: 540px;
   width: 100%;
   padding: 50px 0;
 }
@@ -147,6 +151,9 @@
   align-items: center;
   margin: 70px 20px;
 }
+.home-about-cont {
+  max-width: 580px;
+}
 .home-about-col1 {
   display: flex;
   flex-direction: column;
@@ -154,6 +161,7 @@
   align-items: center;
   text-align: center;
   padding-bottom: 20px;
+  width: 100%;
 }
 .home-about-col1 h6 {
   color: var(--secColor);
@@ -174,6 +182,7 @@
 }
 .home-about-col2 {
   margin: 10px 0;
+  width: 100%;
 }
 .home-about-col2-list {
   padding-bottom: 20px;
@@ -211,6 +220,9 @@
   border-radius: var(--radius);
   padding: 10px 40px;
   font-size: 1.1rem;
+}
+.home-about .img-cont {
+  display: none;
 }
 .home-features {
   display: flex;
@@ -273,7 +285,7 @@
   font-size: 1.8rem;
 }
 .home-program {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 .home-program button {
   display: flex;
@@ -293,15 +305,27 @@
 }
 .home-event {
   margin: 10px 0;
-  padding: 50px 20px 20px 20px;
+  padding: 50px 0 20px 0;
   background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-eventBxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 .home-eventBx {
   background-color: white;
   padding: 40px 40px 20px 40px;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
-  margin-bottom: 35px;
+  max-width: 540px;
+  margin: 20px;
 }
 .home-eventBx .time {
   color: var(--secColor);
@@ -333,12 +357,24 @@
 }
 .home-plan {
   margin: 10px 0;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
+.home-plan .textBxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.home-plan .textBx {
+  max-width: 540px;
+  width: 100%;
+}
+
 .home-plan .textBx.one,
 .home-plan .textBx.two,
 .home-plan .textBx.three {
-  margin-bottom: 35px;
+  margin: 20px;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -350,10 +386,10 @@
   background-color: rgb(169, 157, 143);
 }
 .home-plan .textBx.two {
-  background-color: rgb(196, 140, 121);
+  background-color: rgb(177, 147, 137);
 }
 .home-plan .textBx.three {
-  background-color: rgb(138, 120, 162);
+  background-color: rgb(139, 180, 191);
 }
 
 .home-plan .textBx h3,
@@ -384,9 +420,9 @@
   font-size: 1.1rem;
 }
 .home-testimonials {
-  background-color: rgb(139, 180, 191);
+  background-color: rgb(177, 147, 137);
   margin: 10px 0;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
 .home-testimonials .home-about-col1 h6 {
   color: white;
@@ -394,11 +430,12 @@
 .home-testimonials .textBxs {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 .home-testimonials .textBx {
-  width: 340px;
+  max-width: 540px;
+  width: 100%;
   margin: 20px;
   padding: 40px;
   background: #fff;
