@@ -28,6 +28,7 @@ import { TiSocialGooglePlus } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import Imgslider from "../components/Imgslider";
 import BlogSlider from "../components/BlogSlider";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -456,6 +457,7 @@ const Home = () => {
         </div>
         <BlogSlider />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -427,7 +427,7 @@
 }
 .home-testimonials {
   background-color: rgb(177, 147, 137);
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   padding: 50px 0;
 }
 .home-testimonials .home-about-col1 h6 {
@@ -479,7 +479,7 @@
   color: var(--secColor);
 }
 .home-member {
-  margin: 10px 0;
+  /* margin: 10px 0; */
   padding: 50px 0;
   background-color: rgb(245, 245, 245);
 }
@@ -496,6 +496,7 @@
   text-align: center;
   flex-direction: column;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  max-width: 540px;
   width: 100%;
   padding-top: 40px;
   margin: 20px;
