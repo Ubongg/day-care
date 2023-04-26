@@ -219,7 +219,7 @@ const Wrap = styled.div`
     transition-duration: 300ms;
   }
   .textBx {
-    padding: 20px 20px 30px 20px;
+    padding: 30px 20px;
     border-bottom: 1px solid rgb(224, 222, 222);
     @media screen and (min-width: 768px) {
       border-right: 1px solid rgb(224, 222, 222);
@@ -229,10 +229,11 @@ const Wrap = styled.div`
   .textBx h3 {
     padding-bottom: 10px;
     color: var(--primaryColor);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .textBx p {
     line-height: var(--line-height);
+    color: var(--mainGrey);
   }
   .details {
     padding: 10px 20px;

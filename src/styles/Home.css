@@ -143,6 +143,7 @@
 }
 .homeSec1 .box p {
   padding: 10px 0 0 0;
+  color: var(--mainGrey);
 }
 .home-about {
   display: flex;
@@ -176,6 +177,7 @@
 }
 .home-about-col1 p {
   line-height: var(--line-height);
+  color: var(--mainGrey);
 }
 .home-about-col1-imgBx {
   padding-bottom: 20px;
@@ -202,6 +204,7 @@
 .home-about-col2-list p {
   line-height: var(--line-height);
   padding-left: 25px;
+  color: var(--mainGrey);
 }
 .home-about button {
   display: flex;
@@ -282,6 +285,7 @@
 .home-event .home-about-col1 h3,
 .home-plan .home-about-col1 h3,
 .home-member .home-about-col1 h3,
+.home-blog .home-about-col1 h3,
 .home-testimonials .home-about-col1 h3 {
   font-size: 1.8rem;
 }
@@ -347,6 +351,7 @@
 .home-eventBx .textBx p {
   padding-bottom: 15px;
   line-height: var(--line-height);
+  color: var(--mainGrey);
 }
 .home-eventBx .textBx a {
   display: flex;
@@ -476,6 +481,7 @@
 .home-member {
   margin: 10px 0;
   padding: 50px 0;
+  background-color: rgb(245, 245, 245);
 }
 .home-member .boxes {
   display: flex;
@@ -496,7 +502,7 @@
   transition: var(--mainTransition);
 }
 .home-member .boxes .box:hover {
-  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
 }
 .home-member .boxes .box .imgBx img {
   border: 1px solid var(--light-grey);
@@ -504,12 +510,12 @@
   transition: var(--mainTransition);
 }
 .home-member .boxes .box .imgBx img:hover {
-  border: 1px solid var(--secColor);
+  border: 2px solid var(--secColor);
 }
 .home-member .boxes .box h3 {
   margin-top: 30px;
   color: var(--primaryColor);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .home-member .boxes .box p {
   margin-top: 10px;
@@ -528,4 +534,8 @@
   padding: 10px 10px 5px 10px;
   font-size: 1.5rem;
   color: var(--secColor);
+}
+.home-blog {
+  margin: 10px 0;
+  padding: 50px 0;
 }

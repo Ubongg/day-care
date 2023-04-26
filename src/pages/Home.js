@@ -27,6 +27,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialGooglePlus } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import Imgslider from "../components/Imgslider";
+import BlogSlider from "../components/BlogSlider";
 
 const Home = () => {
   return (
@@ -374,7 +375,7 @@ const Home = () => {
       <div className="home-member">
         <div className="home-about-col1">
           <h6>Member</h6>
-          <h3>Our Stuff</h3>
+          <h3>Our Staff</h3>
           <div className="home-about-col1-imgBx">
             <img src={curly} alt="" />
           </div>
@@ -444,6 +445,16 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="home-blog">
+        <div className="home-about-col1">
+          <h6>Latest News</h6>
+          <h3>Latest Blog</h3>
+          <div className="home-about-col1-imgBx">
+            <img src={curly} alt="" />
+          </div>
+        </div>
+        <BlogSlider />
       </div>
     </div>
   );
