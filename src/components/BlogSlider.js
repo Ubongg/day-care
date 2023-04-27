@@ -142,7 +142,7 @@ const BlogSlider = () => {
         </Wrap>
         <Wrap>
           <div className="imgBx">
-            <img src={blog1} alt="" />
+            <img src={blog4} alt="" />
           </div>
           <div className="textBx">
             <h3>Indoor Activities for Everyone</h3>
@@ -174,7 +174,7 @@ const BlogSlider = () => {
         </Wrap>
         <Wrap>
           <div className="imgBx">
-            <img src={blog2} alt="" />
+            <img src={blog5} alt="" />
           </div>
           <div className="textBx">
             <h3>An Inspired Approach to Education</h3>
@@ -206,7 +206,7 @@ const BlogSlider = () => {
         </Wrap>
         <Wrap>
           <div className="imgBx">
-            <img src={blog3} alt="" />
+            <img src={blog6} alt="" />
           </div>
           <div className="textBx">
             <h3>Kids Grooming With New Lesson</h3>

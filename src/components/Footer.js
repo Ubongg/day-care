@@ -106,9 +106,6 @@ const Columns = styled.div`
   @media screen and (min-width: 768px) {
     margin: 0 3%;
   }
-  @media screen and (min-width: 1024px) {
-    margin: 0 5%;
-  }
 `;
 const About = styled.div`
   max-width: 540px;

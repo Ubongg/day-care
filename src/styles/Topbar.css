@@ -7,7 +7,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px;
+  padding: 15px 40px 15px 20px;
 }
 .info {
   display: flex;
@@ -41,7 +41,7 @@ html {
   background-color: white;
   padding: 17px 15px;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1023px) {
   .topbar {
     display: none;
   }
