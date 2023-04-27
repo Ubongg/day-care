@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Footer.css";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialGooglePlus } from "react-icons/ti";
@@ -105,9 +104,9 @@ const Columns = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    margin: 0 10%;
+    margin: 0 3%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     margin: 0 5%;
   }
 `;

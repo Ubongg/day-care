@@ -51,28 +51,28 @@ const Home = () => {
         </div>
       </div>
       <div className="homeSec1">
-        <div className="box">
+        <div className="box lf">
           <div className="homeSec1ImgBx">
             <img src={lf} alt="" />
           </div>
           <h3>Learning & Fun</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div className="box">
+        <div className="box hm">
           <div className="homeSec1ImgBx">
             <img src={hm} alt="" />
           </div>
           <h3>Healthy Meal</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div className="box">
+        <div className="box et">
           <div className="homeSec1ImgBx">
             <img src={et} alt="" />
           </div>
           <h3>Expert Teacher</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div className="box">
+        <div className="box pa">
           <div className="homeSec1ImgBx">
             <img src={pa} alt="" />
           </div>
