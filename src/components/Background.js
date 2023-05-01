@@ -37,7 +37,7 @@ const Banner = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 18% 0 22% 0;
+  padding: 80px 0 100px 0;
   position relative;
 
   &:before {
