@@ -6,9 +6,11 @@ import curly from "../assets/curlylines.png";
 import bsit from "../assets/bsit.png";
 import bs from "../assets/bs.png";
 import ftn from "../assets/ftn.png";
+import abcol from "../assets/abcol.jpeg";
 import { NavLink } from "react-router-dom";
 import about from "../assets/landlead.png";
 import Fade from "react-reveal/Fade";
+import { TiTick } from "react-icons/ti";
 
 const About = () => {
   return (
@@ -129,6 +131,65 @@ const About = () => {
               <p>It is so easy to find a babysitter who suits you best.</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="about-sec">
+        <div className="img-col">
+          <div className="imgBx">
+            <img src={abcol} alt="" />
+          </div>
+        </div>
+        <div className="text-col">
+          <h3>Daycare Is Great Kids Make It Special</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            incididunt labore et dolore magna aliqua..
+          </p>
+          <div className="ticks">
+            <div className="tick">
+              <span className="icon">
+                <TiTick />
+              </span>
+              <span className="text">Our Job Is To Make Yur Life Easier.</span>
+            </div>
+            <div className="tick">
+              <span className="icon">
+                <TiTick />
+              </span>
+              <span className="text">
+                Experience Childcare As It Should Be.
+              </span>
+            </div>
+            <div className="tick">
+              <span className="icon">
+                <TiTick />
+              </span>
+              <span className="text">
+                Daycare Is Great....Children Make It Special.
+              </span>
+            </div>
+            <div className="tick">
+              <span className="icon">
+                <TiTick />
+              </span>
+              <span className="text">We Are Childcare Professional.</span>
+            </div>
+            <div className="tick">
+              <span className="icon">
+                <TiTick />
+              </span>
+              <span className="text">Your Childcare Wish Just Came True.</span>
+            </div>
+            <div className="tick">
+              <span className="icon">
+                <TiTick />
+              </span>
+              <span className="text">Experience Childcare As It Should Be</span>
+            </div>
+          </div>
+          <button>
+            <NavLink to="/blog">Discover More</NavLink>
+          </button>
         </div>
       </div>
     </div>

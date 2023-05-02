@@ -29,6 +29,8 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import Imgslider from "../components/Imgslider";
 import BlogSlider from "../components/BlogSlider";
 import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const Home = () => {
   return (
@@ -144,36 +146,46 @@ const Home = () => {
           </div>
         </div>
         <div className="home-features-reasons">
-          <div className="home-features-reason">
-            <div className="imgBx one">
-              <img src={kc} alt="" />
+          <Fade left>
+            <div className="home-features-reason">
+              <div className="imgBx one">
+                <img src={kc} alt="" />
+              </div>
+              <h3>Knowledge Classes</h3>
             </div>
-            <h3>Knowledge Classes</h3>
-          </div>
-          <div className="home-features-reason">
-            <div className="imgBx two">
-              <img src={fds} alt="" />
+          </Fade>
+          <Fade right>
+            <div className="home-features-reason">
+              <div className="imgBx two">
+                <img src={fds} alt="" />
+              </div>
+              <h3>Full Day Session</h3>
             </div>
-            <h3>Full Day Session</h3>
-          </div>
-          <div className="home-features-reason">
-            <div className="imgBx three">
-              <img src={qt} alt="" />
+          </Fade>
+          <Fade left>
+            <div className="home-features-reason">
+              <div className="imgBx three">
+                <img src={qt} alt="" />
+              </div>
+              <h3>Qualified Teacher</h3>
             </div>
-            <h3>Qualified Teacher</h3>
-          </div>
-          <div className="home-features-reason">
-            <div className="imgBx four">
-              <img src={pa2} alt="" />
+          </Fade>
+          <Fade right>
+            <div className="home-features-reason">
+              <div className="imgBx four">
+                <img src={pa2} alt="" />
+              </div>
+              <h3>Play Area</h3>
             </div>
-            <h3>Play Area</h3>
-          </div>
-          <div className="home-features-reason">
-            <div className="imgBx five">
-              <img src={lmr} alt="" />
+          </Fade>
+          <Fade left>
+            <div className="home-features-reason">
+              <div className="imgBx five">
+                <img src={lmr} alt="" />
+              </div>
+              <h3>Last Minute Request</h3>
             </div>
-            <h3>Last Minute Request</h3>
-          </div>
+          </Fade>
         </div>
       </div>
       <div className="home-program">
@@ -383,9 +395,11 @@ const Home = () => {
         </div>
         <div className="boxes">
           <div className="box">
-            <div className="imgBx">
-              <img src={st} alt="" />
-            </div>
+            <Zoom>
+              <div className="imgBx">
+                <img src={st} alt="" />
+              </div>
+            </Zoom>
             <h3>Angelina Kapry</h3>
             <p>Senior Teacher</p>
             <div className="socials">
@@ -404,9 +418,11 @@ const Home = () => {
             </div>
           </div>
           <div className="box">
-            <div className="imgBx">
-              <img src={ht} alt="" />
-            </div>
+            <Zoom>
+              <div className="imgBx">
+                <img src={ht} alt="" />
+              </div>
+            </Zoom>
             <h3>Martin Luther</h3>
             <p>Head Teacher</p>
             <div className="socials">
@@ -425,9 +441,11 @@ const Home = () => {
             </div>
           </div>
           <div className="box">
-            <div className="imgBx">
-              <img src={at} alt="" />
-            </div>
+            <Zoom>
+              <div className="imgBx">
+                <img src={at} alt="" />
+              </div>
+            </Zoom>
             <h3>Mrs Barbara</h3>
             <p>Assistant Teacher</p>
             <div className="socials">

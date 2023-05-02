@@ -78,3 +78,51 @@
   color: var(--mainGrey);
   line-height: var(--line-height);
 }
+.about-sec .img-col {
+  display: none;
+}
+.about-sec .text-col {
+  background-color: rgb(245, 245, 245);
+  padding: 50px 10px;
+}
+
+.about-sec .text-col h3 {
+  color: var(--primaryColor);
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+}
+.about-sec .text-col p {
+  color: var(--mainGrey);
+  margin-bottom: 30px;
+  line-height: var(--line-height);
+}
+.about-sec .text-col .tick {
+  margin-bottom: 15px;
+  display: flex;
+}
+.about-sec .text-col .tick .icon {
+  color: var(--secColor);
+  margin-right: 8px;
+  background: white;
+  border-radius: 50%;
+}
+.about-sec .text-col .tick .text {
+  color: var(--primaryColor);
+}
+.about-sec .text-col button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: none;
+  background: transparent;
+  margin-top: 30px;
+}
+.about-sec .text-col a {
+  text-transform: capitalize;
+  color: var(--mainWhite);
+  background: var(--secColor);
+  border: 1px solid var(--secColor);
+  border-radius: var(--radius);
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}
