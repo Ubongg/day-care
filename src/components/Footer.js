@@ -104,7 +104,11 @@ const Columns = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    margin: 0 3%;
+    margin: 30px 3%;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 70px 3%;
+    align-items: flex-start;
   }
 `;
 const About = styled.div`
@@ -126,8 +130,10 @@ const About = styled.div`
     padding-right: 30px;
   }
   @media screen and (min-width: 1024px) {
-    width: 25%;
-    padding-right: 0;
+    // width: 25%;
+    // padding-right: 0;
+    // flex: 0 0 auto;
+    width: 33.33333333%;
   }
 `;
 const Socials = styled.div`
@@ -159,8 +165,11 @@ const Classes = styled.div`
     padding-left: 30px;
   }
   @media screen and (min-width: 1024px) {
+    // width: 25%;
+    // padding-left: 100px;
+    // flex: 0 0 auto;
     width: 25%;
-    padding-left: 100px;
+    margin: 0;
   }
 `;
 const Links = styled.div`
@@ -178,9 +187,12 @@ const Links = styled.div`
     padding-right: 30px;
   }
   @media screen and (min-width: 1024px) {
-    width: 25%;
-    padding-right: 0;
-    padding-left: 80px;
+    // width: 25%;
+    // padding-right: 0;
+    // padding-left: 80px;
+    // flex: 0 0 auto;
+    width: 16.66666667%;
+    margin-bottom: 0;
   }
 `;
 const LinksCont = styled.div`
@@ -205,6 +217,8 @@ const News = styled.div`
     padding-left: 30px;
   }
   @media screen and (min-width: 1024px) {
+    // width: 25%;
+    // flex: 0 0 auto;
     width: 25%;
   }
 `;

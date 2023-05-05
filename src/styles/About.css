@@ -1,5 +1,5 @@
 .about-services {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 .about-services .home-about-col1 h3,
 .about-babysitter .home-about-col1 h3 {
@@ -9,14 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .about-services .services .service {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 30px;
+  margin: 20px;
 }
 .about-services .services .service .imgBx {
   position: relative;
@@ -78,6 +78,11 @@
 .about-services .services .service .textBx p {
   color: var(--mainGrey);
   line-height: var(--line-height);
+  max-width: 240px;
+  width: 100%;
+}
+.about-sec {
+  margin: 30px 0;
 }
 .about-sec .img-col {
   display: none;
@@ -177,4 +182,66 @@
 }
 .about-babysitter .babysitters .babysitter .icon3 {
   background: rgb(20, 86, 161);
+}
+/* .about-services .home-about-col1 h3,
+.about-babysitter .home-about-col1 h3 {
+  font-size: 1.8rem;
+} */
+
+@media screen and (min-width: 768px) {
+  .about-sec .text-col {
+    padding: 50px 50px;
+  }
+  .about-sec .text-col h3 {
+    font-size: 1.8rem;
+  }
+  .about-babysitter .babysitters .babysitter {
+    max-width: 400px;
+    width: 45%;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-sec {
+    display: flex;
+  }
+  .about-sec .img-col {
+    display: block;
+    background-image: url("../assets/abcol.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 50%;
+    min-height: 100%;
+  }
+  .about-sec .text-col {
+    width: 50%;
+  }
+  .about-babysitter .babysitters {
+    flex-wrap: nowrap;
+  }
+  .about-babysitter .babysitters .babysitter {
+    max-width: 100%;
+    width: 30%;
+  }
+  .about .home-about .img-cont::before {
+    content: "";
+    position: absolute;
+    background-image: url(../assets/abpink.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+  .about .home-about .img-cont .imgBx img {
+    border-radius: 4%;
+    position: absolute;
+    left: 30%;
+    bottom: 10%;
+  }
 }

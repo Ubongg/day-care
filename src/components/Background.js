@@ -49,6 +49,13 @@ const Banner = styled.div`
     top: 0;
     left: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 0 150px 0;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 150px 0 180px 0;
+  }
 `;
 const Header = styled.div`
   z-index: 1;
@@ -56,6 +63,10 @@ const Header = styled.div`
   h2 {
     color: white;
     font-size: 2.2rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
   }
 `;
 const PageCont = styled.div`
@@ -71,12 +82,20 @@ const HomeLink = styled.div`
     color: var(--secColor);
     font-size: 1.1rem;
     margin-right: 5px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
 `;
 const Icon = styled.div`
   z-index: 1;
   color: var(--secColor);
   font-size: 1.3rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 const Page = styled.div`
   z-index: 1;
@@ -84,5 +103,9 @@ const Page = styled.div`
     color: white;
     margin-left: 5px;
     font-size: 1.1rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
 `;

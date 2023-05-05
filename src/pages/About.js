@@ -11,7 +11,7 @@ import srook from "../assets/srook.jpeg";
 import mmerr from "../assets/mmerr.jpeg";
 import sshe from "../assets/sshe.jpeg";
 import { NavLink } from "react-router-dom";
-import about from "../assets/landlead.png";
+import about from "../assets/about.png";
 import Fade from "react-reveal/Fade";
 import { TiTick } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";
@@ -141,11 +141,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-sec">
-        <div className="img-col">
-          <div className="imgBx">
-            <img src={abcol} alt="" />
-          </div>
-        </div>
+        <div className="img-col"></div>
         <div className="text-col">
           <h3>Daycare Is Great Kids Make It Special</h3>
           <p>

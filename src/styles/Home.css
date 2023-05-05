@@ -154,6 +154,11 @@
 }
 .home-about-cont {
   max-width: 580px;
+  width: 100%;
+}
+.home-about-cont .home-about-col1 {
+  max-width: 700px;
+  width: 100%;
 }
 .home-about-col1 {
   display: flex;
@@ -162,6 +167,7 @@
   align-items: center;
   text-align: center;
   padding-bottom: 20px;
+  max-width: 100%;
   width: 100%;
 }
 .home-about-col1 h6 {
@@ -583,7 +589,16 @@
     text-align: center;
   }
   .home-about-cont {
-    max-width: 820px;
+    max-width: 840px;
+  }
+  .home-about-cont .home-about-col1 {
+    align-items: flex-start;
+    text-align: start;
+    max-width: 700px;
+    width: 100%;
+  }
+  .home-about-cont .home-about-col1 h3 {
+    font-size: 1.8rem;
   }
   .home-features-reasons {
     flex-direction: row;
@@ -615,20 +630,20 @@
   }
   .home-plan .textBx {
     max-width: 400px;
-    width: 45.5%;
+    width: 45%;
   }
   .home-plan .textBx.one,
   .home-plan .textBx.two,
   .home-plan .textBx.three {
-    margin: 10px;
+    margin: 15px;
   }
   .home-testimonials .textBxs {
     max-width: 100%;
   }
   .home-testimonials .textBx {
     max-width: 400px;
-    width: 45.5%;
-    margin: 10px;
+    width: 45%;
+    margin: 15px;
     padding: 40px;
   }
   .home-member .boxes {
@@ -636,8 +651,8 @@
   }
   .home-member .boxes .box {
     max-width: 400px;
-    width: 45.5%;
-    margin: 10px;
+    width: 45%;
+    margin: 15px;
   }
 }
 
@@ -663,6 +678,9 @@
   }
   .home-about-cont {
     max-width: 820px;
+  }
+  .home-about-cont .home-about-col1 h3 {
+    font-size: 1.5rem;
   }
   .home-features-reasons {
     flex-wrap: nowrap;
@@ -691,11 +709,6 @@
     /* max-width: 400px; */
     max-width: 100%;
     width: 30%;
-  }
-  .home-plan .textBx.one,
-  .home-plan .textBx.two,
-  .home-plan .textBx.three {
-    margin: 10px;
   }
   .home-testimonials .textBxs {
     flex-wrap: nowrap;
