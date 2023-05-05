@@ -6,7 +6,6 @@ import curly from "../assets/curlylines.png";
 import bsit from "../assets/bsit.png";
 import bs from "../assets/bs.png";
 import ftn from "../assets/ftn.png";
-import abcol from "../assets/abcol.jpeg";
 import srook from "../assets/srook.jpeg";
 import mmerr from "../assets/mmerr.jpeg";
 import sshe from "../assets/sshe.jpeg";

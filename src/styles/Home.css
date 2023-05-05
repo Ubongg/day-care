@@ -598,7 +598,7 @@
     width: 100%;
   }
   .home-about-cont .home-about-col1 h3 {
-    font-size: 1.8rem;
+    font-size: 30px;
   }
   .home-features-reasons {
     flex-direction: row;
@@ -676,11 +676,14 @@
     max-width: 100%;
     width: 225px;
   }
+  .home-about {
+    padding-top: 50px;
+  }
   .home-about-cont {
     max-width: 820px;
   }
   .home-about-cont .home-about-col1 h3 {
-    font-size: 1.5rem;
+    font-size: 40px;
   }
   .home-features-reasons {
     flex-wrap: nowrap;

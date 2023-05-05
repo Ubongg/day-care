@@ -111,7 +111,6 @@
   }
   .links a:hover {
     color: var(--secColor);
-    margin-left: 1.5rem;
   }
   .log {
     display: none;

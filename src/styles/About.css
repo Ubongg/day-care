@@ -1,5 +1,5 @@
 .about-services {
-  padding: 50px 20px;
+  padding: 0 20px 50px;
 }
 .about-services .home-about-col1 h3,
 .about-babysitter .home-about-col1 h3 {
@@ -168,11 +168,12 @@
   color: var(--primaryColor);
 }
 .about-babysitter .babysitters .babysitter .icons span {
-  padding: 7px 5px 0;
+  padding: 7px 7px 0;
   border-radius: 50%;
   color: white;
   font-size: 1.6rem;
   margin-right: 13px;
+  cursor: pointer;
 }
 .about-babysitter .babysitters .babysitter .icon1 {
   background: var(--primaryColor);
@@ -183,22 +184,22 @@
 .about-babysitter .babysitters .babysitter .icon3 {
   background: rgb(20, 86, 161);
 }
-/* .about-services .home-about-col1 h3,
-.about-babysitter .home-about-col1 h3 {
-  font-size: 1.8rem;
-} */
 
 @media screen and (min-width: 768px) {
   .about-sec .text-col {
     padding: 50px 50px;
   }
   .about-sec .text-col h3 {
-    font-size: 1.8rem;
+    font-size: 34px;
   }
   .about-babysitter .babysitters .babysitter {
     max-width: 400px;
     width: 45%;
     margin: 15px;
+  }
+  .about-services .home-about-col1 h3,
+  .about-babysitter .home-about-col1 h3 {
+    font-size: 30px;
   }
 }
 
@@ -243,5 +244,9 @@
     position: absolute;
     left: 30%;
     bottom: 10%;
+  }
+  .about-services .home-about-col1 h3,
+  .about-babysitter .home-about-col1 h3 {
+    font-size: 50px;
   }
 }
