@@ -7,10 +7,17 @@ import bsit from "../assets/bsit.png";
 import bs from "../assets/bs.png";
 import ftn from "../assets/ftn.png";
 import abcol from "../assets/abcol.jpeg";
+import srook from "../assets/srook.jpeg";
+import mmerr from "../assets/mmerr.jpeg";
+import sshe from "../assets/sshe.jpeg";
 import { NavLink } from "react-router-dom";
 import about from "../assets/landlead.png";
 import Fade from "react-reveal/Fade";
 import { TiTick } from "react-icons/ti";
+import { TiSocialFacebook } from "react-icons/ti";
+import { TiSocialTwitter } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -192,6 +199,69 @@ const About = () => {
           </button>
         </div>
       </div>
+      <div className="about-babysitter">
+        <div className="home-about-col1">
+          <h6>Babysitter</h6>
+          <h3>Our Babysitter</h3>
+          <div className="home-about-col1-imgBx">
+            <img src={curly} alt="" />
+          </div>
+        </div>
+        <div className="babysitters">
+          <div className="babysitter">
+            <div className="imgBx">
+              <img src={srook} alt="" />
+            </div>
+            <h3>Steven Rookery</h3>
+            <div className="icons">
+              <span className="icon1">
+                <TiSocialFacebook />
+              </span>
+              <span className="icon2">
+                <TiSocialTwitter />
+              </span>
+              <span className="icon3">
+                <TiSocialLinkedin />
+              </span>
+            </div>
+          </div>
+          <div className="babysitter">
+            <div className="imgBx">
+              <img src={mmerr} alt="" />
+            </div>
+            <h3>Malisa Merry</h3>
+            <div className="icons">
+              <span className="icon1">
+                <TiSocialFacebook />
+              </span>
+              <span className="icon2">
+                <TiSocialTwitter />
+              </span>
+              <span className="icon3">
+                <TiSocialLinkedin />
+              </span>
+            </div>
+          </div>
+          <div className="babysitter">
+            <div className="imgBx">
+              <img src={sshe} alt="" />
+            </div>
+            <h3>Stewart Shery</h3>
+            <div className="icons">
+              <span className="icon1">
+                <TiSocialFacebook />
+              </span>
+              <span className="icon2">
+                <TiSocialTwitter />
+              </span>
+              <span className="icon3">
+                <TiSocialLinkedin />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
