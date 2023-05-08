@@ -1,0 +1,132 @@
+.inquire {
+  padding: 70px 0;
+  background: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .home-about-col1 {
+  padding-bottom: 50px;
+}
+.contact .home-about-col1 h3 {
+  font-size: 1.8rem;
+}
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+.contact form input,
+textarea {
+  width: 100%;
+  height: 55px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+  border: 1px solid #ced4da;
+  appearance: none;
+}
+.contact form textarea {
+  height: 229px;
+  resize: none;
+}
+.contact form button {
+  background: var(--secColor);
+  opacity: 1;
+  border: none;
+  padding: 10px 40px;
+  box-shadow: 5px 6px 7px 0px #c5c5c5;
+  font-weight: 600;
+  color: white;
+  border-radius: var(--radius);
+  border: 1px solid var(--secColor);
+  font-size: 1.1rem;
+}
+.our-info .home-about-col1 {
+  padding-bottom: 10px;
+}
+.our-info {
+  padding: 70px 30px;
+}
+.our-info .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.our-info .infos .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.our-info .infos .info .iconBx {
+  padding: 20px 20px 15px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 30px 0 10px 0;
+  color: white;
+  background: rgb(239, 239, 105);
+  font-size: 1.8rem;
+}
+.our-info .infos .info h3 {
+  color: var(--primaryColor);
+  margin: 10px;
+  font-size: 1.3rem;
+}
+.our-info .infos .info p {
+  color: var(--mainGrey);
+  border: none;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact form {
+    width: 700px;
+    padding: 0;
+  }
+  .contact form input,
+  textarea {
+    width: 45.7%;
+    height: 55px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .contact form textarea {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact form button {
+    margin-left: 15px;
+  }
+  .our-info .infos {
+    flex-direction: row;
+  }
+  .our-info .infos .info {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact form {
+    width: 1030px;
+    padding: 0 30px;
+  }
+  .contact form input,
+  textarea {
+    width: 46.9%;
+    height: 55px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .contact .home-about-col1 h3 {
+    font-size: 50px;
+  }
+  .our-info .infos .info {
+    width: 33.33%;
+  }
+}
