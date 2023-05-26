@@ -1,0 +1,102 @@
+.blog-details-cont {
+  padding: 50px 20px;
+  background-color: rgb(245, 245, 245);
+}
+.blog-details-cont .left-sec {
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+.blog-details-cont .left-sec .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+.blog-details-cont .left-sec .textBx {
+  margin: 20px;
+}
+.blog-details-cont .left-sec .textBx .icons {
+  margin: 20px 0;
+  display: flex;
+}
+.blog-details-cont .left-sec .textBx .icons .detail {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.blog-details-cont .left-sec .textBx .icons .detail .icon {
+  color: var(--secColor);
+  margin-right: 3px;
+  font-size: 0.8rem;
+}
+.blog-details-cont .left-sec .textBx p {
+  line-height: var(--line-height);
+  color: var(--mainGrey);
+  letter-spacing: var(--spacing);
+  font-size: 1.1rem;
+}
+.blog-details-cont .right-sec .latest-posts {
+  border: 1px solid #c8c8c8;
+  padding: 20px;
+  margin: 40px 0 30px;
+}
+.blog-details-cont .right-sec .latest-posts .head h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.1rem;
+}
+.blog-details-cont .right-sec .latest-posts .post {
+  display: flex;
+  margin: 20px 0 0;
+}
+.blog-details-cont .right-sec .latest-posts .post .textBx {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog-details-cont .right-sec .latest-posts .post .textBx a {
+  margin-bottom: 10px;
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
+.blog-details-cont .right-sec .latest-posts .post .textBx .date {
+  color: var(--mainGrey);
+  display: flex;
+  align-items: center;
+}
+.blog-details-cont .right-sec .latest-posts .post .textBx .date .icon {
+  margin-right: 5px;
+}
+.blog-details-cont .right-sec .latest-posts .post .textBx .date .day {
+  font-size: 0.9rem;
+}
+.blog-details-cont .right-sec .free-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 30px;
+}
+.blog-details-cont .right-sec .free-info h2 {
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+.blog-details-cont .right-sec .free-info p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+.blog-details-cont .right-sec .free-info button {
+  display: flex;
+  border: none;
+  background: transparent;
+  margin-bottom: 10px;
+}
+.blog-details-cont .right-sec .free-info button a {
+  text-transform: capitalize;
+  color: var(--primaryColor);
+  background: var(--mainWhite);
+  border-radius: var(--radius);
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}

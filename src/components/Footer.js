@@ -94,6 +94,7 @@ const Columns = styled.div`
   h2,
   h3 {
     color: white;
+    font-family: "Fredoka One", cursive;
   }
   h3 {
     font-size: 1.35rem;
