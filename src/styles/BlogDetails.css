@@ -1,6 +1,13 @@
 .blog-details-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 50px 20px;
   background-color: rgb(245, 245, 245);
+}
+.blog-details-cont .wrap {
+  max-width: 540px;
 }
 .blog-details-cont .left-sec {
   background-color: #fff;
@@ -27,6 +34,10 @@
   margin-right: 3px;
   font-size: 0.8rem;
 }
+.blog-details-cont .left-sec .textBx .icons .detail .text {
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
 .blog-details-cont .left-sec .textBx p {
   line-height: var(--line-height);
   color: var(--mainGrey);
@@ -41,6 +52,7 @@
 .blog-details-cont .right-sec .latest-posts .head h3 {
   font-family: "Fredoka One", cursive;
   font-size: 1.1rem;
+  color: var(--primaryColor);
 }
 .blog-details-cont .right-sec .latest-posts .post {
   display: flex;
@@ -99,4 +111,30 @@
   border-radius: var(--radius);
   padding: 10px 40px;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .blog-details-cont .wrap {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blog-details-cont {
+    padding: 50px 30px;
+  }
+  .blog-details-cont .wrap {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .blog-details-cont .left-sec {
+    width: 65%;
+    margin-right: 25px;
+  }
+  .blog-details-cont .right-sec {
+    width: 35%;
+  }
+  .blog-details-cont .right-sec .latest-posts {
+    margin: 0 0 30px;
+  }
 }
