@@ -705,6 +705,9 @@
   .home-eventBx {
     margin: 15px;
   }
+  .home-plan {
+    padding: 50px 10px;
+  }
   .home-plan .textBxs {
     flex-wrap: nowrap;
   }
@@ -713,6 +716,9 @@
     max-width: 100%;
     width: 30%;
   }
+  .home-testimonials {
+    padding: 50px 10px;
+  }
   .home-testimonials .textBxs {
     flex-wrap: nowrap;
   }
@@ -720,6 +726,9 @@
     /* max-width: 400px; */
     max-width: 100%;
     width: 30%;
+  }
+  .home-member {
+    padding: 50px 10px;
   }
   .home-member .boxes {
     flex-wrap: nowrap;

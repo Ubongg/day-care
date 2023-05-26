@@ -63,6 +63,7 @@ const Header = styled.div`
   h2 {
     color: white;
     font-size: 2.2rem;
+    font-family: "Fredoka One", cursive;
 
     @media screen and (min-width: 768px) {
       font-size: 3rem;

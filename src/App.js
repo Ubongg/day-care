@@ -15,6 +15,7 @@ import LogIn from "./pages/LogIn";
 import Pricing from "./pages/Pricing";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
 
 const router = createBrowserRouter(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="pricing" element={<Pricing />} />
       <Route path="team" element={<Team />} />
       <Route path="blog" element={<Blog />} />
+      <Route path="blog/:id" element={<BlogDetails />} />
       <Route path="contact" element={<Contact />} />
     </Route>
   )

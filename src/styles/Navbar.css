@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0 0.2rem;
 }
 .nav-toggle {
   font-size: 1.8rem;
@@ -80,6 +80,11 @@
   margin: 0 1.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-header {
+    padding: 0 0.5rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .nav-center {
     width: 100%;
@@ -87,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 1.8rem;
   }
   .nav-center.shadow {
     box-shadow: none;

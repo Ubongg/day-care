@@ -206,7 +206,7 @@ const Carousel = styled(Slider)`
 const Wrap = styled.div`
   cursor: pointer;
 
-  border: 1px solid rgb(224, 222, 222);
+  border: 0.5px solid rgb(224, 222, 222);
 
   img {
     // border: 4px solid transparent;
@@ -220,10 +220,10 @@ const Wrap = styled.div`
   }
   .textBx {
     padding: 30px 20px;
-    border-bottom: 1px solid rgb(224, 222, 222);
+    border-bottom: 0.5px solid rgb(224, 222, 222);
     @media screen and (min-width: 768px) {
-      border-right: 1px solid rgb(224, 222, 222);
-      border-left: 1px solid rgb(224, 222, 222);
+      border-right: 0.5px solid rgb(224, 222, 222);
+      border-left: 0.5px solid rgb(224, 222, 222);
     }
   }
   .textBx h3 {
@@ -238,8 +238,8 @@ const Wrap = styled.div`
   .details {
     padding: 10px 20px;
     @media screen and (min-width: 768px) {
-      border-right: 1px solid rgb(224, 222, 222);
-      border-left: 1px solid rgb(224, 222, 222);
+      border-right: 0.5px solid rgb(224, 222, 222);
+      border-left: 0.5px solid rgb(224, 222, 222);
     }
   }
   .details span {
