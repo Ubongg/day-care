@@ -82,23 +82,20 @@
 
 @media screen and (min-width: 768px) {
   .nav-header {
-    padding: 0;
+    padding: 0 10px;
   }
-  .nav-center {
-    width: min(103ch, 100% - 3rem);
-    margin-inline: auto;
-    /* background-color: aqua; */
-    padding: 10px 0;
+  .links a {
+    margin: 3rem 0.8rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .nav-center {
     width: min(120ch, 100% - 4rem);
+    margin-inline: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    /* background-color: rebeccapurple; */
   }
   .nav-center.shadow {
     box-shadow: none;

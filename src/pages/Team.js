@@ -220,11 +220,20 @@ export default Team;
 
 const Cont = styled.div``;
 const Members = styled.div`
-  margin: 50px 20px;
+  padding: 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1024px) {
+    width: min(124ch, 100% - 3rem);
+    margin-inline: auto;
+    padding: 50px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: min(139ch, 100% - 4rem);
+  }
 `;
 const Member = styled.div`
   display: flex;
@@ -241,12 +250,12 @@ const Member = styled.div`
   @media screen and (min-width: 768px) {
     max-width: 400px;
     width: 45%;
-    margin: 15px;
+    margin: 13px;
   }
 
   @media screen and (min-width: 1024px) {
     max-width: 100%;
-    width: 30%;
+    width: 30.4%;
   }
 `;
 const ImgBx = styled.div`

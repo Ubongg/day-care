@@ -219,6 +219,9 @@
   .about-sec .text-col {
     width: 50%;
   }
+  .about-babysitter {
+    padding: 50px 10px;
+  }
   .about-babysitter .babysitters {
     flex-wrap: nowrap;
   }
