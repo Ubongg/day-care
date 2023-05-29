@@ -8,28 +8,29 @@ import "../styles/Topbar.css";
 const Topbar = () => {
   return (
     <nav className="topbar">
-      <div className="info">
-        <p>
-          <span className="icon">
-            <FaRegClock />
-          </span>
-          <span className="text">Mon-Fri 9.00-17.00</span>
-        </p>
-        <p>
-          <span className="icon">
-            <FaPhoneAlt />
-          </span>
-          <span className="text">+2348038038030</span>{" "}
-        </p>
-        <p>
-          <span className="icon">
-            <HiMail />
-          </span>
-          <span className="text">info@gmail.com</span>
-        </p>
-      </div>
-      <div className="topLinks">
-        {/* <span className="icon">
+      <div className="topbar-wrap">
+        <div className="info">
+          <p>
+            <span className="icon">
+              <FaRegClock />
+            </span>
+            <span className="text">Mon-Fri 9.00-17.00</span>
+          </p>
+          <p>
+            <span className="icon">
+              <FaPhoneAlt />
+            </span>
+            <span className="text">+2348038038030</span>{" "}
+          </p>
+          <p>
+            <span className="icon">
+              <HiMail />
+            </span>
+            <span className="text">info@gmail.com</span>
+          </p>
+        </div>
+        <div className="topLinks">
+          {/* <span className="icon">
           <FaFacebookF />
         </span>
         <span className="icon">
@@ -41,9 +42,10 @@ const Topbar = () => {
         <span className="icon">
           <FaLinkedinIn />
         </span> */}
-        <span className="login">
-          <NavLink to="/login">Log In</NavLink>
-        </span>
+          <span className="login">
+            <NavLink to="/login">Log In</NavLink>
+          </span>
+        </div>
       </div>
     </nav>
   );

@@ -2,12 +2,17 @@ html {
   --spacing: 0.3px;
   --lineHeight: 25px;
 }
+
 .topbar {
   background-color: var(--primaryColor);
+}
+.topbar-wrap {
+  width: min(120ch, 100% - 4rem);
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px 15px 20px;
+  padding: 15px 0;
 }
 .info {
   display: flex;
@@ -17,14 +22,16 @@ html {
   border-right: 1px solid black;
   position: relative;
   font-size: 14px;
+  margin-right: 10px;
 }
 .info p .icon {
   color: var(--secColor);
   position: absolute;
   top: 1.5px;
+  left: 0;
 }
 .info p .text {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 10px;
   color: white;
 }
 .topLinks {
@@ -44,5 +51,10 @@ html {
 @media screen and (max-width: 1023px) {
   .topbar {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topbar-wrap {
+    width: min(133ch, 100% - 4rem);
   }
 }

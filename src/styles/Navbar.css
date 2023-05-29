@@ -82,17 +82,23 @@
 
 @media screen and (min-width: 768px) {
   .nav-header {
-    padding: 0 0.5rem;
+    padding: 0;
+  }
+  .nav-center {
+    width: min(103ch, 100% - 3rem);
+    margin-inline: auto;
+    /* background-color: aqua; */
+    padding: 10px 0;
   }
 }
 @media screen and (min-width: 1024px) {
   .nav-center {
-    width: 100%;
-    margin: -1rem auto;
+    width: min(120ch, 100% - 4rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.8rem;
+    padding: 0;
+    /* background-color: rebeccapurple; */
   }
   .nav-center.shadow {
     box-shadow: none;
@@ -110,14 +116,19 @@
     display: flex;
   }
   .links a {
-    padding-top: 5px;
+    padding-top: 0;
     color: var(--mainBlack);
-    margin-right: 15px;
+    margin-left: 15px;
   }
   .links a:hover {
     color: var(--secColor);
   }
   .log {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-center {
+    width: min(133ch, 100% - 4rem);
   }
 }

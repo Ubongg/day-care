@@ -559,7 +559,7 @@
   .heroText {
     align-items: flex-start;
     width: 50%;
-    margin-right: 10px;
+    margin-right: 20px;
     max-width: 400px;
   }
   .heroText h1 {
@@ -587,6 +587,9 @@
     width: 45.5%;
     padding: 40px 20px;
     text-align: center;
+  }
+  .home-about {
+    margin: 70px 26px;
   }
   .home-about-cont {
     max-width: 840px;
