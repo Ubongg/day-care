@@ -220,14 +220,17 @@
     width: 50%;
   }
   .about-babysitter {
-    padding: 50px 10px;
+    padding: 50px 0;
   }
   .about-babysitter .babysitters {
     flex-wrap: nowrap;
+    width: min(124.5ch, 100% - 2.3rem);
+    margin-inline: auto;
   }
   .about-babysitter .babysitters .babysitter {
     max-width: 100%;
-    width: 30%;
+    width: 30.5%;
+    margin: 13px;
   }
   .about .home-about .img-cont::before {
     content: "";
@@ -251,5 +254,10 @@
   .about-services .home-about-col1 h3,
   .about-babysitter .home-about-col1 h3 {
     font-size: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-babysitter .babysitters {
+    width: min(138ch, 100% - 4rem);
   }
 }

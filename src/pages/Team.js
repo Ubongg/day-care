@@ -227,12 +227,12 @@ const Members = styled.div`
   flex-wrap: wrap;
 
   @media screen and (min-width: 1024px) {
-    width: min(124ch, 100% - 3rem);
+    width: min(124.2ch, 100% - 2.5rem);
     margin-inline: auto;
     padding: 50px 0;
   }
   @media screen and (min-width: 1200px) {
-    width: min(139ch, 100% - 4rem);
+    width: min(138ch, 100% - 4rem);
   }
 `;
 const Member = styled.div`
@@ -248,14 +248,15 @@ const Member = styled.div`
   box-shadow: -1px 5px 15px 0px #e6e6e6;
 
   @media screen and (min-width: 768px) {
-    max-width: 400px;
+    max-width: 340px;
     width: 45%;
-    margin: 13px;
+    margin: 15px;
   }
 
   @media screen and (min-width: 1024px) {
     max-width: 100%;
-    width: 30.4%;
+    width: 30.5%;
+    margin: 13px;
   }
 `;
 const ImgBx = styled.div`

@@ -119,13 +119,16 @@
 }
 @media screen and (min-width: 1024px) {
   .blog-details-cont {
-    padding: 50px 30px;
+    padding: 50px 0;
   }
   .blog-details-cont .wrap {
-    max-width: 1000px;
+    max-width: 100%;
+    padding: 50px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    width: min(120ch, 100% - 4rem);
+    margin-inline: auto;
   }
   .blog-details-cont .left-sec {
     width: 65%;
@@ -136,5 +139,10 @@
   }
   .blog-details-cont .right-sec .latest-posts {
     margin: 0 0 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-details-cont .wrap {
+    width: min(133ch, 100% - 4rem);
   }
 }

@@ -713,37 +713,51 @@
     margin: 15px;
   }
   .home-plan {
-    padding: 50px 10px;
+    padding: 50px 0;
   }
   .home-plan .textBxs {
     flex-wrap: nowrap;
+    width: min(124ch, 100% - 3rem);
+    margin-inline: auto;
   }
   .home-plan .textBx {
     /* max-width: 400px; */
+    /* margin: 13px; */
     max-width: 100%;
-    width: 30%;
+    width: 30.5%;
+  }
+  .home-plan .textBx.one,
+  .home-plan .textBx.two,
+  .home-plan .textBx.three {
+    margin: 13px;
   }
   .home-testimonials {
-    padding: 50px 10px;
+    padding: 50px 0;
   }
   .home-testimonials .textBxs {
     flex-wrap: nowrap;
+    width: min(123ch, 100% - 3.5rem);
+    margin-inline: auto;
   }
   .home-testimonials .textBx {
     /* max-width: 400px; */
     max-width: 100%;
-    width: 30%;
+    width: 31%;
+    margin: 13px;
   }
   .home-member {
-    padding: 50px 10px;
+    padding: 50px 0;
   }
   .home-member .boxes {
     flex-wrap: nowrap;
+    width: min(124ch, 100% - 3rem);
+    margin-inline: auto;
   }
   .home-member .boxes .box {
     /* max-width: 400px; */
     max-width: 100%;
-    width: 30%;
+    width: 30.4%;
+    margin: 13px;
   }
   .home-about {
     display: flex;
@@ -825,5 +839,14 @@
   }
   .home-about-col1 h3 {
     font-size: 40px;
+  }
+  .home-plan .textBxs {
+    width: min(138ch, 100% - 4rem);
+  }
+  .home-testimonials .textBxs {
+    width: min(136ch, 100% - 4rem);
+  }
+  .home-member .boxes {
+    width: min(138.5ch, 100% - 4rem);
   }
 }

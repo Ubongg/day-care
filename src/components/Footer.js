@@ -108,8 +108,13 @@ const Columns = styled.div`
     margin: 30px 3%;
   }
   @media screen and (min-width: 1024px) {
-    margin: 70px 3%;
+    // margin: 70px 3%;
+    width: min(120ch, 100% - 4rem);
+    margin-inline: auto;
     align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    width: min(133ch, 100% - 4rem);
   }
 `;
 const About = styled.div`

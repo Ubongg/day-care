@@ -230,7 +230,12 @@ const Blogs = styled.div`
     max-width: 100%;
   }
   @media screen and (min-width: 1024px) {
-    padding: 0 10px;
+    width: min(123.5ch, 100% - 2.5rem);
+    margin-inline: auto;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: min(137.5ch, 100% - 4rem);
   }
 `;
 const SingleBlog = styled.div`
@@ -328,6 +333,7 @@ const SingleBlog = styled.div`
   }
   @media screen and (min-width: 1024px) {
     max-width: 100%;
-    width: 30%;
+    width: 30.6%;
+    margin: 13px;
   }
 `;
