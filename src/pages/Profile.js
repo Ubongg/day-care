@@ -21,7 +21,9 @@ const Profile = () => {
 
   const onLogout = () => {
     auth.signOut();
-    navigate("/");
+    toast.success("Signed out successfully");
+
+    navigate("/login");
   };
 
   return (

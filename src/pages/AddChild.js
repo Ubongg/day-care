@@ -20,6 +20,7 @@ function CreateListing() {
     address: "",
     childAge: 0,
     childName: "",
+    childGender: "",
     disability: false,
     images: {},
     parentAge: 0,
@@ -32,6 +33,7 @@ function CreateListing() {
     address,
     childAge,
     childName,
+    childGender,
     disability,
     images,
     parentAge,
@@ -50,7 +52,7 @@ function CreateListing() {
         if (user) {
           setFormData({ ...formData, userRef: user.uid });
         } else {
-          navigate("/sign-in");
+          navigate("/login");
         }
       });
     }
@@ -204,6 +206,17 @@ function CreateListing() {
             onChange={onMutate}
             required
           />
+
+          <label className="formLabel">Child Gender</label>
+          <select
+            className="formInputGender"
+            id="childGender"
+            value={childGender}
+            onChange={onMutate}
+          >
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
 
           <label className="formLabel">Disability</label>
           <div className="formButtons">
