@@ -59,7 +59,7 @@ const Navbar = () => {
             <NavLink to="/contact">Contact</NavLink>{" "}
           </li>
           <li className="log" onClick={toggleLinks}>
-            <NavLink to="/login">Log In</NavLink>
+            <NavLink to="/profile">Profile</NavLink>
           </li>
         </ul>
       </div>

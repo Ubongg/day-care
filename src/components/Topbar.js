@@ -43,7 +43,7 @@ const Topbar = () => {
           <FaLinkedinIn />
         </span> */}
           <span className="login">
-            <NavLink to="/login">Log In</NavLink>
+            <NavLink to="/profile">Profile</NavLink>
           </span>
         </div>
       </div>

@@ -10,7 +10,6 @@ import pa2 from "../assets/pa2.png";
 import lmr from "../assets/lmr.png";
 import { NavLink } from "react-router-dom";
 import { TiTick } from "react-icons/ti";
-import Fade from "react-reveal/Fade";
 import Footer from "../components/Footer";
 
 const Pricing = () => {
@@ -125,46 +124,36 @@ const Pricing = () => {
           </div>
         </div>
         <div className="home-features-reasons">
-          <Fade left>
-            <div className="home-features-reason">
-              <div className="imgBx one">
-                <img src={kc} alt="" />
-              </div>
-              <h3>Knowledge Classes</h3>
+          <div className="home-features-reason">
+            <div className="imgBx one">
+              <img src={kc} alt="" />
             </div>
-          </Fade>
-          <Fade right>
-            <div className="home-features-reason">
-              <div className="imgBx two">
-                <img src={fds} alt="" />
-              </div>
-              <h3>Full Day Session</h3>
+            <h3>Knowledge Classes</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx two">
+              <img src={fds} alt="" />
             </div>
-          </Fade>
-          <Fade left>
-            <div className="home-features-reason">
-              <div className="imgBx three">
-                <img src={qt} alt="" />
-              </div>
-              <h3>Qualified Teacher</h3>
+            <h3>Full Day Session</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx three">
+              <img src={qt} alt="" />
             </div>
-          </Fade>
-          <Fade right>
-            <div className="home-features-reason">
-              <div className="imgBx four">
-                <img src={pa2} alt="" />
-              </div>
-              <h3>Play Area</h3>
+            <h3>Qualified Teacher</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx four">
+              <img src={pa2} alt="" />
             </div>
-          </Fade>
-          <Fade left>
-            <div className="home-features-reason">
-              <div className="imgBx five">
-                <img src={lmr} alt="" />
-              </div>
-              <h3>Last Minute Request</h3>
+            <h3>Play Area</h3>
+          </div>
+          <div className="home-features-reason">
+            <div className="imgBx five">
+              <img src={lmr} alt="" />
             </div>
-          </Fade>
+            <h3>Last Minute Request</h3>
+          </div>
         </div>
       </div>
       <Footer />

@@ -2,7 +2,6 @@ import React from "react";
 import Background from "../components/Background";
 import curly from "../assets/curlylines.png";
 import "../styles/Contact.css";
-import Fade from "react-reveal/Fade";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
@@ -50,33 +49,27 @@ const Contact = () => {
           </div>
         </div>
         <div className="infos">
-          <Fade left>
-            <div className="info">
-              <div className="iconBx" style={{ background: "#ffde76" }}>
-                <FaPhoneAlt />
-              </div>
-              <h3>Phone</h3>
-              <p>+2348038038030</p>
+          <div className="info">
+            <div className="iconBx" style={{ background: "#ffde76" }}>
+              <FaPhoneAlt />
             </div>
-          </Fade>
-          <Fade right>
-            <div className="info">
-              <div className="iconBx" style={{ background: "#f08aa2" }}>
-                <MdEmail />
-              </div>
-              <h3>Email</h3>
-              <p>lovedaycare@gmail.com</p>
+            <h3>Phone</h3>
+            <p>+2348038038030</p>
+          </div>
+          <div className="info">
+            <div className="iconBx" style={{ background: "#f08aa2" }}>
+              <MdEmail />
             </div>
-          </Fade>
-          <Fade left>
-            <div className="info">
-              <div className="iconBx" style={{ background: "#b97eba" }}>
-                <MdLocationOn />
-              </div>
-              <h3>Address</h3>
-              <p>Osongama Estate, Uyo</p>
+            <h3>Email</h3>
+            <p>lovedaycare@gmail.com</p>
+          </div>
+          <div className="info">
+            <div className="iconBx" style={{ background: "#b97eba" }}>
+              <MdLocationOn />
             </div>
-          </Fade>
+            <h3>Address</h3>
+            <p>Osongama Estate, Uyo</p>
+          </div>
         </div>
       </div>
       <Footer />

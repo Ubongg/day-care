@@ -11,7 +11,6 @@ import mmerr from "../assets/mmerr.jpeg";
 import sshe from "../assets/sshe.jpeg";
 import { NavLink } from "react-router-dom";
 import about from "../assets/about.png";
-import Fade from "react-reveal/Fade";
 import { TiTick } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
@@ -90,9 +89,7 @@ const About = () => {
             <div className="imgBx">
               <div className="imgBg1"></div>
               <div className="imgBg2"></div>
-              <Fade left>
-                <img src={bsit} alt="" />
-              </Fade>
+              <img src={bsit} alt="" />
             </div>
             <div className="textBx">
               <h3>Baby Sitting</h3>
@@ -109,9 +106,7 @@ const About = () => {
                 className="imgBg2"
                 style={{ backgroundColor: "#e8aeb7" }}
               ></div>
-              <Fade left>
-                <img src={bs} alt="" />
-              </Fade>
+              <img src={bs} alt="" />
             </div>
             <div className="textBx">
               <h3 style={{ color: "#e84661" }}>Baby Shower</h3>
@@ -128,9 +123,7 @@ const About = () => {
                 className="imgBg2"
                 style={{ backgroundColor: "#cbc6e1" }}
               ></div>
-              <Fade left>
-                <img src={ftn} alt="" />
-              </Fade>
+              <img src={ftn} alt="" />
             </div>
             <div className="textBx">
               <h3 style={{ color: "#a393e5" }}>Full Time Nanny</h3>
