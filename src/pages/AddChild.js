@@ -20,7 +20,7 @@ function CreateListing() {
     address: "",
     childAge: 0,
     childName: "",
-    childGender: "",
+    childGender: "Male",
     disability: false,
     images: {},
     parentAge: 0,
