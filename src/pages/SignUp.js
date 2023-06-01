@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../styles/LogIn.css";
+
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import {
@@ -52,6 +54,8 @@ const SignUp = () => {
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
+
+      toast.success("Signed up successfully");
 
       navigate("/");
     } catch (error) {

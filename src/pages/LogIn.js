@@ -37,6 +37,7 @@ const LogIn = () => {
       );
 
       if (userCredential.user) {
+        toast.success("Signed in successfully");
         navigate("/");
       }
     } catch (error) {
