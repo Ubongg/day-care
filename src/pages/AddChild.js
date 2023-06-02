@@ -133,7 +133,7 @@ function CreateListing() {
 
     const docRef = await addDoc(collection(db, "kids"), formDataCopy);
     setLoading(false);
-    toast.success("Child saved");
+    toast.success("Child added");
     // navigate(`/category/${formDataCopy.type}/${docRef.id}`);
     navigate("/profile");
   };
