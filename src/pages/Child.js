@@ -8,6 +8,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../firebase.config";
 import Spinner from "../components/Spinner";
+import Footer from "../components/Footer";
 
 const Child = () => {
   const [kid, setKid] = useState(null);
@@ -60,14 +61,15 @@ const Child = () => {
       </Carousel>
       <Info>
         <h3>Child Name: {kid.kidName}</h3>
-        <h3>Address: {kid.address}</h3>
         <h3>Child Gender: {kid.kidGender}</h3>
         <h3>Child Age: {kid.kidAge}</h3>
         <h3>Parent Name: {kid.parentName}</h3>
         <h3>Parent Age: {kid.parentAge}</h3>
         <h3>Parent Phone: {kid.parentPhone}</h3>
         <h3>Daycare Plan: {kid.plan}</h3>
+        <h3>Address: {kid.address}</h3>
       </Info>
+      <Footer />
     </Cont>
   );
 };

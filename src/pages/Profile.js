@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import arrowRight from "../assets/svg/keyboardArrowRightIcon.svg";
 import ChildItem from "../components/ChildItem";
+import Footer from "../components/Footer";
 
 const Profile = () => {
   const auth = getAuth();
@@ -170,6 +171,7 @@ const Profile = () => {
           </>
         )}
       </main>
+      <Footer />
     </div>
   );
 };

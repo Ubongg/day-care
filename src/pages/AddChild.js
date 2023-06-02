@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { v4 as uuidv4 } from "uuid";
 import Spinner from "../components/Spinner";
+import Footer from "../components/Footer";
 
 function CreateListing() {
   // eslint-disable-next-line
@@ -26,7 +27,7 @@ function CreateListing() {
     parentAge: 0,
     parentName: "",
     parentPhone: 0,
-    plan: "",
+    plan: "Monthly",
   });
 
   const {
@@ -276,14 +277,17 @@ function CreateListing() {
           />
 
           <label className="formLabel">Plan</label>
-          <input
+          <select
             className="formInputPlan"
-            type="text"
             id="plan"
             value={plan}
             onChange={onMutate}
             required
-          />
+          >
+            <option value="Monthly">Monthly</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Daily">Daily</option>
+          </select>
 
           <label className="formLabel">Images</label>
           <p className="imagesInfo">
@@ -304,6 +308,7 @@ function CreateListing() {
           </button>
         </form>
       </main>
+      <Footer />
     </div>
   );
 }
