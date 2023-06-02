@@ -18,9 +18,9 @@ function CreateListing() {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     address: "",
-    childAge: 0,
-    childName: "",
-    childGender: "Male",
+    kidAge: 0,
+    kidName: "",
+    kidGender: "Male",
     disability: false,
     images: {},
     parentAge: 0,
@@ -31,9 +31,9 @@ function CreateListing() {
 
   const {
     address,
-    childAge,
-    childName,
-    childGender,
+    kidAge,
+    kidName,
+    kidGender,
     disability,
     images,
     parentAge,
@@ -191,8 +191,8 @@ function CreateListing() {
           <input
             className="formInputAge"
             type="number"
-            id="childAge"
-            value={childAge}
+            id="kidAge"
+            value={kidAge}
             onChange={onMutate}
             required
           />
@@ -201,8 +201,8 @@ function CreateListing() {
           <input
             className="formInputName"
             type="text"
-            id="childName"
-            value={childName}
+            id="kidName"
+            value={kidName}
             onChange={onMutate}
             required
           />
@@ -210,9 +210,10 @@ function CreateListing() {
           <label className="formLabel">Child Gender</label>
           <select
             className="formInputGender"
-            id="childGender"
-            value={childGender}
+            id="kidGender"
+            value={kidGender}
             onChange={onMutate}
+            required
           >
             <option value="Male">Male</option>
             <option value="Female">Female</option>

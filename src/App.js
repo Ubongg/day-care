@@ -19,10 +19,12 @@ import AddChild from "./pages/AddChild";
 import Pricing from "./pages/Pricing";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
+import Child from "./pages/Child";
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
 import PrivateRoute from "./components/PrivateRoute";
 import Profile from "./pages/Profile";
+import EditChild from "./pages/EditChild";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,7 +36,9 @@ const router = createBrowserRouter(
       </Route>
       <Route path="login" element={<LogIn />} />
       <Route path="signup" element={<SignUp />} />
-      <Route path="add-child" element={<AddChild />} />
+      <Route path="add-kid" element={<AddChild />} />
+      <Route path="edit-kid/:kidId" element={<EditChild />} />
+      <Route path="kid/:kidId" element={<Child />} />
       <Route path="pricing" element={<Pricing />} />
       <Route path="team" element={<Team />} />
       <Route path="blog" element={<Blog />} />
