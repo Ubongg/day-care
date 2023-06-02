@@ -5,7 +5,7 @@ import { ReactComponent as EditIcon } from "../assets/svg/editIcon.svg";
 function ChildItem({ kid, id, onEdit, onDelete }) {
   return (
     <li className="itemKid">
-      <NavLink to="/kid/:kidId" className="itemKidLink">
+      <NavLink to={`/kid/${id}`} className="itemKidLink">
         <img src={kid.imgUrls[0]} alt={kid.kidName} className="itemKidImg" />
         <div className="itemKidDetails">
           <p className="itemKidLocation">{kid.address}</p>
