@@ -109,73 +109,77 @@ const Profile = () => {
   return (
     <>
       <div className="profile">
-        <header className="profileHeader">
-          <p className="pageHeader">My Profile</p>
-          <button type="button" className="logOut" onClick={onLogout}>
-            Logout
-          </button>
-        </header>
+        <div className="profile-cont">
+          <header className="profileHeader">
+            <p className="pageHeader">My Profile</p>
+            <button type="button" className="logOut" onClick={onLogout}>
+              Logout
+            </button>
+          </header>
 
-        <main>
-          <div className="profileDetailsHeader">
-            <p className="profileDetailsText">Personal Details</p>
-            <p
-              className="changePersonalDetails"
-              onClick={() => {
-                changeDetails && onSubmit();
-                setChangeDetails((prevState) => !prevState);
-              }}
-            >
-              {changeDetails ? "done" : "change"}
-            </p>
-          </div>
+          <main>
+            <div className="profileDetailsHeader">
+              <p className="profileDetailsText">Personal Details</p>
+              <p
+                className="changePersonalDetails"
+                onClick={() => {
+                  changeDetails && onSubmit();
+                  setChangeDetails((prevState) => !prevState);
+                }}
+              >
+                {changeDetails ? "done" : "change"}
+              </p>
+            </div>
 
-          <div className="profileCard">
-            <form>
-              <input
-                type="text"
-                id="name"
-                className={!changeDetails ? "profileName" : "profileNameActive"}
-                disabled={!changeDetails}
-                value={name}
-                onChange={onChange}
-                style={{ marginBottom: "5px" }}
-              />
-              <input
-                type="text"
-                id="email"
-                className={
-                  !changeDetails ? "profileEmail" : "profileEmailActive"
-                }
-                disabled={!changeDetails}
-                value={email}
-                onChange={onChange}
-              />
-            </form>
-          </div>
+            <div className="profileCard">
+              <form>
+                <input
+                  type="text"
+                  id="name"
+                  className={
+                    !changeDetails ? "profileName" : "profileNameActive"
+                  }
+                  disabled={!changeDetails}
+                  value={name}
+                  onChange={onChange}
+                  style={{ marginBottom: "5px" }}
+                />
+                <input
+                  type="text"
+                  id="email"
+                  className={
+                    !changeDetails ? "profileEmail" : "profileEmailActive"
+                  }
+                  disabled={!changeDetails}
+                  value={email}
+                  onChange={onChange}
+                />
+              </form>
+            </div>
 
-          <NavLink to="/add-kid" className="addChild">
-            <p>Add your child</p>
-            <img src={arrowRight} alt="arrow right" />
-          </NavLink>
+            <NavLink to="/add-kid" className="addChild">
+              <p>Add your child</p>
+              <img src={arrowRight} alt="arrow right" />
+            </NavLink>
 
-          {!loading && kids?.length > 0 && (
-            <>
-              <p className="kidText">Your Kids</p>
-              <ul className="kidsList">
-                {kids.map((kid) => (
-                  <ChildItem
-                    key={kid.id}
-                    kid={kid.data}
-                    id={kid.id}
-                    onDelete={() => onDelete(kid.id)}
-                    onEdit={() => onEdit(kid.id)}
-                  />
-                ))}
-              </ul>
-            </>
-          )}
-        </main>
+            {!loading && kids?.length > 0 && (
+              <>
+                <p className="kidText">Your Kids</p>
+                <ul className="kidsList">
+                  {kids.map((kid) => (
+                    <ChildItem
+                      key={kid.id}
+                      kid={kid.data}
+                      id={kid.id}
+                      onDelete={() => onDelete(kid.id)}
+                      onEdit={() => onEdit(kid.id)}
+                    />
+                  ))}
+                </ul>
+              </>
+            )}
+          </main>
+        </div>
       </div>
       <Footer />
     </>

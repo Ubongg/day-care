@@ -1,6 +1,14 @@
 .profile {
   padding: 50px 20px;
   background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-cont {
+  max-width: 540px;
+  width: 100%;
 }
 .profileHeader {
   display: flex;
@@ -27,7 +35,6 @@
 .profileDetailsHeader {
   display: flex;
   justify-content: space-between;
-  max-width: 540px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -42,7 +49,6 @@
 }
 .profileCard {
   background-color: #fff;
-  max-width: 540px;
   width: 100%;
   padding: 20px 15px;
   border-radius: 15px;
@@ -68,7 +74,6 @@
   color: var(--primaryColor);
 }
 .addChild {
-  max-width: 540px;
   width: 100%;
   border-radius: 15px;
   display: flex;
@@ -96,7 +101,6 @@
   width: 100%;
 }
 .itemKid {
-  max-width: 540px;
   width: 100%;
   display: flex;
 }
@@ -106,7 +110,6 @@
 .itemKid .itemKidLink .imgBx {
   width: 120px;
   height: 120px;
-  /* margin-right: 10px; */
 }
 .itemKid .itemKidLink .imgBx img {
   width: 80%;
@@ -130,4 +133,35 @@
   height: 23px;
   cursor: pointer;
   margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    padding: 50px 25px;
+  }
+  .profile-cont {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .profile-cont {
+    max-width: 100%;
+    width: min(120ch, 100% - 1rem);
+    margin-inline: auto;
+  }
+  .itemKid .itemKidLink .imgBx {
+    width: 200px;
+    height: 200px;
+  }
+  .itemKid .itemKidLink .itemKidDetails p {
+    margin-top: 20px;
+  }
+  .profile svg {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .profile-cont {
+    width: min(133ch, 100% - 4rem);
+  }
 }
