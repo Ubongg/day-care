@@ -95,9 +95,8 @@ const Child = () => {
 export default Child;
 
 const Cont = styled.div`
-  display: flex;
-  flex-direction: column;
   padding: 0 0 50px;
+  overflow-x: hidden;
 `;
 
 const Carousel = styled(Slider)`

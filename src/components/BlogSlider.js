@@ -42,7 +42,7 @@ const BlogSlider = () => {
   };
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Carousel {...settings}>
         <Wrap>
           <div className="imgBx">

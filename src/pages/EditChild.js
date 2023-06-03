@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import "../styles/AddChild.css";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import {
   getStorage,
@@ -12,20 +13,21 @@ import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { v4 as uuidv4 } from "uuid";
 import Spinner from "../components/Spinner";
+import Footer from "../components/Footer";
 
 const EditChild = () => {
   const [loading, setLoading] = useState(false);
   const [kid, setKid] = useState(false);
   const [formData, setFormData] = useState({
     address: "",
-    kidAge: 0,
+    kidAge: "",
     kidName: "",
     kidGender: "Male",
     disability: false,
     images: {},
-    parentAge: 0,
+    parentAge: "",
     parentName: "",
-    parentPhone: 0,
+    parentPhone: "",
     plan: "",
   });
 
@@ -200,141 +202,147 @@ const EditChild = () => {
   }
 
   return (
-    <div className="profile">
-      <header>
-        <p className="pageHeader">Add a Child</p>
-      </header>
+    <>
+      <div className="addChild">
+        <header>
+          <p className="pageHeader">Edit Child</p>
+        </header>
 
-      <main>
-        <form onSubmit={onSubmit}>
-          <label className="formLabel">Address</label>
-          <textarea
-            className="formInputName"
-            type="text"
-            id="address"
-            value={address}
-            onChange={onMutate}
-            required
-          />
+        <main>
+          <form onSubmit={onSubmit}>
+            <label className="formLabel">Address</label>
+            <textarea
+              className="formInputName"
+              type="text"
+              id="address"
+              value={address}
+              onChange={onMutate}
+              required
+            />
 
-          <label className="formLabel">Child Age</label>
-          <input
-            className="formInputAge"
-            type="number"
-            id="kidAge"
-            value={kidAge}
-            onChange={onMutate}
-            required
-          />
+            <label className="formLabel">Child Age</label>
+            <input
+              className="formInputAge"
+              type="number"
+              id="kidAge"
+              value={kidAge}
+              onChange={onMutate}
+              required
+            />
 
-          <label className="formLabel">Child Name</label>
-          <input
-            className="formInputName"
-            type="text"
-            id="kidName"
-            value={kidName}
-            onChange={onMutate}
-            required
-          />
+            <label className="formLabel">Child Name</label>
+            <input
+              className="formInputName"
+              type="text"
+              id="kidName"
+              value={kidName}
+              onChange={onMutate}
+              required
+            />
 
-          <label className="formLabel">Child Gender</label>
-          <select
-            className="formInputGender"
-            id="kidGender"
-            value={kidGender}
-            onChange={onMutate}
-            required
-          >
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-
-          <label className="formLabel">Disability</label>
-          <div className="formButtons">
-            <button
-              className={disability ? "formButtonActive" : "formButton"}
-              type="button"
-              id="disability"
-              value={true}
-              onClick={onMutate}
+            <label className="formLabel">Child Gender</label>
+            <select
+              className="formInputGender"
+              id="kidGender"
+              value={kidGender}
+              onChange={onMutate}
+              required
             >
-              Yes
-            </button>
-            <button
-              className={
-                !disability && disability !== null
-                  ? "formButtonActive"
-                  : "formButton"
-              }
-              type="button"
-              id="disability"
-              value={false}
-              onClick={onMutate}
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+
+            <label className="formLabel">Disability</label>
+            <div className="formButtons">
+              <button
+                className={disability ? "formButtonActive" : "formButton"}
+                type="button"
+                id="disability"
+                value={true}
+                onClick={onMutate}
+              >
+                Yes
+              </button>
+              <button
+                className={
+                  !disability && disability !== null
+                    ? "formButtonActive"
+                    : "formButton"
+                }
+                type="button"
+                id="disability"
+                value={false}
+                onClick={onMutate}
+              >
+                No
+              </button>
+            </div>
+
+            <label className="formLabel">Parent Age</label>
+            <input
+              className="formInputAge"
+              type="number"
+              id="parentAge"
+              value={parentAge}
+              onChange={onMutate}
+              required
+            />
+
+            <label className="formLabel">Parent Name</label>
+            <input
+              className="formInputName"
+              type="text"
+              id="parentName"
+              value={parentName}
+              onChange={onMutate}
+              required
+            />
+
+            <label className="formLabel">Parent Phone</label>
+            <input
+              className="formInputPhone"
+              type="number"
+              id="parentPhone"
+              value={parentPhone}
+              onChange={onMutate}
+              required
+            />
+
+            <label className="formLabel">Plan</label>
+            <select
+              className="formInputPlan"
+              id="plan"
+              value={plan}
+              onChange={onMutate}
+              required
             >
-              No
+              <option value="Monthly">Monthly</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Daily">Daily</option>
+            </select>
+
+            <label className="formLabel">Images</label>
+            <p className="imagesInfo">
+              The first image will be the cover (max 6).
+            </p>
+            <input
+              className="formInputFile"
+              type="file"
+              id="images"
+              onChange={onMutate}
+              max="6"
+              accept=".jpg,.png,.jpeg"
+              multiple
+              required
+            />
+            <button type="submit" className="primaryButton createListingButton">
+              Add Child
             </button>
-          </div>
-
-          <label className="formLabel">Parent Age</label>
-          <input
-            className="formInputAge"
-            type="number"
-            id="parentAge"
-            value={parentAge}
-            onChange={onMutate}
-            required
-          />
-
-          <label className="formLabel">Parent Name</label>
-          <input
-            className="formInputName"
-            type="text"
-            id="parentName"
-            value={parentName}
-            onChange={onMutate}
-            required
-          />
-
-          <label className="formLabel">Parent Phone</label>
-          <input
-            className="formInputPhone"
-            type="number"
-            id="parentPhone"
-            value={parentPhone}
-            onChange={onMutate}
-            required
-          />
-
-          <label className="formLabel">Plan</label>
-          <input
-            className="formInputPlan"
-            type="text"
-            id="plan"
-            value={plan}
-            onChange={onMutate}
-            required
-          />
-
-          <label className="formLabel">Images</label>
-          <p className="imagesInfo">
-            The first image will be the cover (max 6).
-          </p>
-          <input
-            className="formInputFile"
-            type="file"
-            id="images"
-            onChange={onMutate}
-            max="6"
-            accept=".jpg,.png,.jpeg"
-            multiple
-            required
-          />
-          <button type="submit" className="primaryButton createListingButton">
-            Add Child
-          </button>
-        </form>
-      </main>
-    </div>
+          </form>
+        </main>
+      </div>
+      <Footer />
+    </>
   );
 };
 

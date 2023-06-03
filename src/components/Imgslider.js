@@ -35,7 +35,7 @@ const Imgslider = () => {
   };
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Carousel {...settings}>
         <Wrap>
           <div className="imgBx">

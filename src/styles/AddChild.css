@@ -1,0 +1,139 @@
+.addChildCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  margin: 0;
+  padding: 50px 20px;
+}
+.addChildCont .pageHeader {
+  color: var(--secColor);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+form {
+  width: 100%;
+}
+.formLabel {
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  display: block;
+  color: var(--primaryColor);
+  font-family: "Fredoka One", cursive;
+}
+.formButtons {
+  display: flex;
+  width: 100%;
+}
+.formInputName,
+.formInputAge,
+.formInputGender,
+.formButton,
+.formButtonActive,
+.formInputPhone,
+.formInputAddress,
+.formInputPlan,
+.formInputFile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainGrey);
+  background-color: #fff;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+.formInputName,
+.formInputAge,
+.formInputGender,
+.formInputPhone,
+.formInputPlan,
+.formInputAddress {
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  resize: none;
+  padding: 0.9rem 1rem;
+}
+.formButton,
+.formButtonActive {
+  padding: 0.9rem 1.3rem;
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  margin: 0;
+  width: 100%;
+}
+.formButtonActive {
+  background-color: var(--secColor);
+  color: #ffffff;
+}
+.formInputAddress {
+  height: 100px;
+  margin: 0;
+}
+.formInputFile {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  text-align: center;
+  width: 100%;
+  border-radius: var(--radius);
+}
+.formInputFile::-webkit-file-upload-button {
+  background-color: var(--secColor);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.addChildButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0 1rem;
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+  border-radius: var(--radius);
+  transition: var(--mainTransition);
+  border: none;
+  font-size: 1.1rem;
+  padding: 13px;
+}
+.addChildButton:hover {
+  background: var(--secColor);
+}
+@media screen and (min-width: 550px) {
+  form {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 620px) {
+  form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 700px) {
+  form {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  form {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 900px) {
+  form {
+    width: 650px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  form {
+    width: 700px;
+  }
+}
