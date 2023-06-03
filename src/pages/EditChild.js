@@ -203,19 +203,19 @@ const EditChild = () => {
 
   return (
     <>
-      <div className="addChild">
+      <div className="addChildCont">
         <header>
           <p className="pageHeader">Edit Child</p>
         </header>
 
         <main>
           <form onSubmit={onSubmit}>
-            <label className="formLabel">Address</label>
-            <textarea
+            <label className="formLabel">Child Name</label>
+            <input
               className="formInputName"
               type="text"
-              id="address"
-              value={address}
+              id="kidName"
+              value={kidName}
               onChange={onMutate}
               required
             />
@@ -223,19 +223,9 @@ const EditChild = () => {
             <label className="formLabel">Child Age</label>
             <input
               className="formInputAge"
-              type="number"
+              type="text"
               id="kidAge"
               value={kidAge}
-              onChange={onMutate}
-              required
-            />
-
-            <label className="formLabel">Child Name</label>
-            <input
-              className="formInputName"
-              type="text"
-              id="kidName"
-              value={kidName}
               onChange={onMutate}
               required
             />
@@ -278,16 +268,6 @@ const EditChild = () => {
               </button>
             </div>
 
-            <label className="formLabel">Parent Age</label>
-            <input
-              className="formInputAge"
-              type="number"
-              id="parentAge"
-              value={parentAge}
-              onChange={onMutate}
-              required
-            />
-
             <label className="formLabel">Parent Name</label>
             <input
               className="formInputName"
@@ -298,12 +278,32 @@ const EditChild = () => {
               required
             />
 
+            <label className="formLabel">Parent Age</label>
+            <input
+              className="formInputAge"
+              type="text"
+              id="parentAge"
+              value={parentAge}
+              onChange={onMutate}
+              required
+            />
+
             <label className="formLabel">Parent Phone</label>
             <input
               className="formInputPhone"
-              type="number"
+              type="text"
               id="parentPhone"
               value={parentPhone}
+              onChange={onMutate}
+              required
+            />
+
+            <label className="formLabel">Address</label>
+            <textarea
+              className="formInputAddress"
+              type="text"
+              id="address"
+              value={address}
               onChange={onMutate}
               required
             />
@@ -322,7 +322,7 @@ const EditChild = () => {
             </select>
 
             <label className="formLabel">Images</label>
-            <p className="imagesInfo">
+            <p className="imagesInfo" style={{ color: "var(--secColor)" }}>
               The first image will be the cover (max 6).
             </p>
             <input
@@ -335,8 +335,8 @@ const EditChild = () => {
               multiple
               required
             />
-            <button type="submit" className="primaryButton createListingButton">
-              Add Child
+            <button type="submit" className="primaryButton addChildButton">
+              Edit Child
             </button>
           </form>
         </main>
