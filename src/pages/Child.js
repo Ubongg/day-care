@@ -45,41 +45,63 @@ const Child = () => {
   };
 
   return (
-    <Cont>
-      <Carousel {...settings}>
-        {kid.imgUrls.map((url, index) => (
-          <Wrap key={index}>
-            <div
-              style={{
-                background: `url(${kid.imgUrls[index]}) center no-repeat`,
-                backgroundSize: "cover",
-                height: "300px",
-              }}
-            ></div>
-          </Wrap>
-        ))}
-      </Carousel>
-      <Info>
-        <h3>Child Name: {kid.kidName}</h3>
-        <h3>Child Gender: {kid.kidGender}</h3>
-        <h3>Child Age: {kid.kidAge}</h3>
-        <h3>Parent Name: {kid.parentName}</h3>
-        <h3>Parent Age: {kid.parentAge}</h3>
-        <h3>Parent Phone: {kid.parentPhone}</h3>
-        <h3>Daycare Plan: {kid.plan}</h3>
-        <h3>Address: {kid.address}</h3>
-      </Info>
+    <>
+      <Cont>
+        <Carousel {...settings}>
+          {kid.imgUrls.map((url, index) => (
+            <Wrap key={index}>
+              <div
+                style={{
+                  background: `url(${kid.imgUrls[index]}) center no-repeat`,
+                  backgroundSize: "cover",
+                }}
+                className="imgBx"
+              ></div>
+            </Wrap>
+          ))}
+        </Carousel>
+        <Info>
+          <h3>
+            <span>Child Name:</span> {kid.kidName}
+          </h3>
+          <h3>
+            <span>Child Gender:</span> {kid.kidGender}
+          </h3>
+          <h3>
+            <span>Child Age:</span> {kid.kidAge} years
+          </h3>
+          <h3>
+            <span>Parent Name:</span> {kid.parentName}
+          </h3>
+          <h3>
+            <span>Parent Age:</span> {kid.parentAge} years
+          </h3>
+          <h3>
+            <span>Parent Phone:</span> {kid.parentPhone}
+          </h3>
+          <h3>
+            <span>Daycare Plan:</span> {kid.plan} Plan
+          </h3>
+          <h3>
+            <span>Address:</span> {kid.address}
+          </h3>
+        </Info>
+      </Cont>
       <Footer />
-    </Cont>
+    </>
   );
 };
 
 export default Child;
 
-const Cont = styled.div``;
+const Cont = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px;
+`;
 
 const Carousel = styled(Slider)`
-  // margin: 20px;
+  margin-bottom: 30px;
 
   ul li button {
     &:before {
@@ -99,5 +121,46 @@ const Carousel = styled(Slider)`
     z-index: 1;
   }
 `;
-const Wrap = styled.div``;
-const Info = styled.div``;
+const Wrap = styled.div`
+  .imgBx {
+    height: 300px;
+
+    @media screen and (min-width: 768px) {
+      height: 350px;
+    }
+    @media screen and (min-width: 1024px) {
+      height: 400px;
+    }
+  }
+`;
+const Info = styled.div`
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 25px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+    width: min(120ch, 100% - 4rem);
+    margin-inline: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: min(133ch, 100% - 4rem);
+  }
+
+  h3 {
+    margin-bottom: 15px;
+    color: var(--mainGrey);
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    font-family: "Fredoka One", cursive;
+    font-size: 1.3rem;
+    color: var(--secColor);
+
+    span {
+      color: var(--primaryColor);
+    }
+  }
+`;

@@ -1,5 +1,5 @@
 .profile {
-  padding: 50px 20px;
+  padding: 50px 20px 20px;
   background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
@@ -103,6 +103,7 @@
 .itemKid {
   width: 100%;
   display: flex;
+  margin-bottom: 20px;
 }
 .itemKid .itemKidLink {
   display: flex;
@@ -137,7 +138,7 @@
 
 @media screen and (min-width: 768px) {
   .profile {
-    padding: 50px 25px;
+    padding: 50px 25px 20px;
   }
   .profile-cont {
     max-width: 720px;
