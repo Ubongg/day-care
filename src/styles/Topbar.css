@@ -47,6 +47,11 @@ html {
   color: var(--primaryColor);
   background-color: white;
   padding: 17px 15px;
+  font-size: 1rem;
+  transition: var(--mainTransition);
+}
+.topLinks .login a:hover {
+  color: var(--secColor);
 }
 @media screen and (max-width: 1023px) {
   .topbar {

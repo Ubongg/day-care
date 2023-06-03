@@ -85,8 +85,8 @@ const Cont = styled.div`
 `;
 const Columns = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   flex-wrap: wrap;
   margin: 20px;
   padding-top: 30px;
