@@ -26,7 +26,7 @@ const Load = styled.div`
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #00cc66 transparent #00cc66 transparent;
+  border-color: var(--secColor) transparent var(--secColor) transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 

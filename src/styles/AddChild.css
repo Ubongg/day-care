@@ -9,13 +9,14 @@
 }
 .addChildCont .pageHeader {
   color: var(--secColor);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-form {
+.addChildCont form {
   width: 100%;
 }
 .formLabel {
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 1.5rem 0 0.5rem;
   display: block;
@@ -41,7 +42,7 @@ form {
   color: var(--mainGrey);
   background-color: #fff;
   margin-right: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 100%;
 }
 .formInputName,
@@ -108,32 +109,50 @@ form {
   background: var(--secColor);
 }
 @media screen and (min-width: 550px) {
-  form {
+  .addChildCont form {
     width: 400px;
   }
 }
 @media screen and (min-width: 620px) {
-  form {
+  .addChildCont form {
     width: 450px;
   }
 }
 @media screen and (min-width: 700px) {
-  form {
+  .addChildCont form {
     width: 500px;
   }
 }
 @media screen and (min-width: 800px) {
-  form {
+  .addChildCont form {
     width: 600px;
   }
 }
 @media screen and (min-width: 900px) {
-  form {
+  .addChildCont form {
     width: 650px;
   }
 }
 @media screen and (min-width: 1024px) {
-  form {
+  .addChildCont form {
     width: 700px;
+  }
+  .addChildCont .pageHeader {
+    font-size: 3.1rem;
+  }
+  .formLabel {
+    font-size: 1.4rem;
+  }
+  .formInputName,
+  .formInputAge,
+  .formInputGender,
+  .formButton,
+  .formButtonActive,
+  .formInputPhone,
+  .formInputAddress,
+  .formInputPlan,
+  .formInputFile,
+  .addChildButton {
+    font-size: 1.2rem;
   }
 }

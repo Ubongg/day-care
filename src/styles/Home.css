@@ -139,7 +139,7 @@
 .homeSec1 .box h3 {
   padding: 10px;
   color: var(--primaryColor);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .homeSec1 .box p {
   padding: 10px 0 0 0;
@@ -198,7 +198,8 @@
 .home-about-col2-list li {
   padding-bottom: 6px;
   color: var(--primaryColor);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .home-about-col2-list li::before {
   content: "·";
@@ -206,6 +207,7 @@
   vertical-align: middle;
   line-height: 20px;
   color: var(--secColor);
+  font-weight: 400;
 }
 .home-about-col2-list p {
   line-height: var(--line-height);
@@ -285,6 +287,7 @@
 }
 .home-features-reason h3 {
   color: var(--primaryColor);
+  font-size: 1.2rem;
 }
 .home-features .home-about-col1 h3,
 .home-program .home-about-col1 h3,
@@ -351,7 +354,7 @@
 .home-eventBx .textBx h3 {
   padding-bottom: 10px;
   color: var(--primaryColor);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .home-eventBx .textBx p {
@@ -479,7 +482,7 @@
   color: var(--primaryColor);
 }
 .home-testimonials .textBx h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 20px;
   font-weight: 600;
   color: var(--secColor);
@@ -522,7 +525,7 @@
 .home-member .boxes .box h3 {
   margin-top: 30px;
   color: var(--primaryColor);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .home-member .boxes .box p {
   margin-top: 10px;
@@ -617,9 +620,6 @@
     padding: 20px;
     width: 100%;
   }
-  .home-features-reason h3 {
-    font-size: 1.3rem;
-  }
   .home-eventBxs {
     max-width: 100%;
   }
@@ -660,6 +660,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .home p,
+  .home button a,
+  .pricing p,
+  .pricing button a {
+    font-size: 1.2rem;
+  }
   .hero {
     padding: 0 2.1rem 60px;
   }
@@ -670,15 +676,22 @@
   .heroText h1 {
     font-size: 45px;
   }
-  .heroText p {
+  /* .heroText p {
     font-size: 20px;
-  }
+  } */
   .homeSec1 {
     max-width: 100%;
   }
   .homeSec1 .box {
     max-width: 100%;
     width: 225px;
+  }
+  .homeSec1 .box h3,
+  .home-about-col2-list li,
+  .home-eventBx .textBx h3,
+  .home-testimonials .textBx h3,
+  .home-member .boxes .box h3 {
+    font-size: 1.4rem;
   }
   .home-about {
     padding-top: 50px;

@@ -23,7 +23,7 @@ textarea {
   height: 55px;
   padding: 10px 20px;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #212529;
   border: 1px solid #ced4da;
@@ -77,12 +77,12 @@ textarea {
 .our-info .infos .info h3 {
   color: var(--primaryColor);
   margin: 10px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .our-info .infos .info p {
   color: var(--mainGrey);
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -122,11 +122,21 @@ textarea {
     height: 55px;
     padding: 10px;
     margin: 15px;
+    font-size: 1.2rem;
+  }
+  .contact form button {
+    font-size: 1.2rem;
   }
   .contact .home-about-col1 h3 {
     font-size: 50px;
   }
   .our-info .infos .info {
     width: 33.33%;
+  }
+  .our-info .infos .info h3 {
+    font-size: 1.4rem;
+  }
+  .our-info .infos .info p {
+    font-size: 1.2rem;
   }
 }

@@ -25,7 +25,9 @@ const Team = () => {
           <ImgBx>
             <img src={cbrown} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -46,7 +48,9 @@ const Team = () => {
           <ImgBx>
             <img src={bcam} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -67,7 +71,9 @@ const Team = () => {
           <ImgBx>
             <img src={lwat} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -88,7 +94,9 @@ const Team = () => {
           <ImgBx>
             <img src={bcam2} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -109,7 +117,9 @@ const Team = () => {
           <ImgBx>
             <img src={jbat} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -130,7 +140,9 @@ const Team = () => {
           <ImgBx>
             <img src={jdoe} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -151,7 +163,9 @@ const Team = () => {
           <ImgBx>
             <img src={seva} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -172,7 +186,9 @@ const Team = () => {
           <ImgBx>
             <img src={cbrown2} alt="" />
           </ImgBx>
-          <Name>Charlie Brown</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -193,7 +209,9 @@ const Team = () => {
           <ImgBx>
             <img src={osmith} alt="" />
           </ImgBx>
-          <Name>Olivia Smith</Name>
+          <Name>
+            <h3>Charlie Brown</h3>
+          </Name>
           <Role>Deputy Head Teacher</Role>
           <Links>
             <Icon>
@@ -271,12 +289,21 @@ const ImgBx = styled.div`
 `;
 const Name = styled.div`
   margin: 20px 0 15px 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--primaryColor);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.4rem;
+  }
 `;
 const Role = styled.div`
-  color: var(--mainGrey);
+  color: var(--secColor);
   margin-bottom: 20px;
+  font-size: 1.1rem;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.2rem;
+  }
 `;
 const Links = styled.div`
   display: flex;
@@ -287,11 +314,11 @@ const Icon = styled.div`
   color: white;
   font-size: 1.4rem;
   margin-right: 13px;
-  background: var(--primaryColor);
+  background: var(--mainGrey);
   cursor: pointer;
   transition: var(--mainTransition);
 
   &:hover {
-    background: var(--secColor);
+    background: #ddd;
   }
 `;

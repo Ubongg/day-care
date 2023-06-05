@@ -296,6 +296,10 @@ const Wrap = styled.div`
     padding-bottom: 20px;
     color: var(--primaryColor);
     font-size: 1.2rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.4rem;
+    }
   }
   .textBx p {
     line-height: var(--line-height);
@@ -304,9 +308,13 @@ const Wrap = styled.div`
   }
   .textBx a {
     color: var(--primaryColor);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     position: relative;
     font-weight: 600;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.2rem;
+    }
   }
   .textBx a .icon {
     position: absolute;

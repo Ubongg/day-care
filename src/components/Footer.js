@@ -95,13 +95,16 @@ const Columns = styled.div`
   h3 {
     color: white;
     font-family: "Fredoka One", cursive;
+    font-size: 1.4rem;
   }
-  h3 {
-    font-size: 1.35rem;
-  }
-  a {
+  a,
+  p {
     color: #ddd;
     font-size: 1.1rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.2rem;
+    }
   }
 
   @media screen and (min-width: 768px) {

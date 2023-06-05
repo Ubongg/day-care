@@ -175,7 +175,7 @@ function CreateListing() {
     <>
       <div className="addChildCont">
         <header>
-          <p className="pageHeader">Add a Child</p>
+          <p className="pageHeader">Add Your Child Info</p>
         </header>
 
         <main>

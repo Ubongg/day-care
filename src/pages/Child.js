@@ -95,7 +95,7 @@ const Child = () => {
 export default Child;
 
 const Cont = styled.div`
-  padding: 0 0 50px;
+  padding: 0 0 40px;
   overflow-x: hidden;
 `;
 
@@ -155,7 +155,7 @@ const Info = styled.div`
     letter-spacing: 0.8px;
     text-transform: capitalize;
     font-family: "Fredoka One", cursive;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--secColor);
 
     span {

@@ -73,7 +73,7 @@
 .about-services .services .service .textBx h3 {
   color: #ffd15c;
   margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .about-services .services .service .textBx p {
   color: var(--mainGrey);
@@ -95,7 +95,7 @@
 .about-sec .text-col h3 {
   color: var(--primaryColor);
   margin-bottom: 25px;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 .about-sec .text-col p {
   color: var(--mainGrey);
@@ -189,9 +189,6 @@
   .about-sec .text-col {
     padding: 50px 50px;
   }
-  .about-sec .text-col h3 {
-    font-size: 34px;
-  }
   .about-babysitter .babysitters .babysitter {
     max-width: 400px;
     width: 45%;
@@ -204,6 +201,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .about p,
+  .about button a {
+    font-size: 1.2rem;
+  }
+  .about-services .services .service .textBx h3 {
+    font-size: 1.4rem;
+  }
   .about-sec {
     display: flex;
   }
@@ -219,6 +223,13 @@
   .about-sec .text-col {
     width: 50%;
   }
+  .about-sec .text-col h3 {
+    font-size: 3.1rem;
+  }
+  .about-sec .text-col .tick .text {
+    font-size: 1.1rem;
+  }
+
   .about-babysitter {
     padding: 50px 0;
   }

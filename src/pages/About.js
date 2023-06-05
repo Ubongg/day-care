@@ -135,7 +135,7 @@ const About = () => {
       <div className="about-sec">
         <div className="img-col"></div>
         <div className="text-col">
-          <h3>Daycare Is Great Kids Make It Special</h3>
+          <h3>Daycare Is Great For Kids Make It Special</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             incididunt labore et dolore magna aliqua..

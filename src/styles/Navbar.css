@@ -37,7 +37,8 @@
 }
 .links a {
   color: var(--primaryColor);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   display: block;
@@ -71,13 +72,14 @@
   color: var(--mainWhite);
   background: var(--secColor);
   border-radius: var(--radius);
-  padding: 10px;
+  padding: 10px 20px;
   transition: var(--mainTransition);
   margin: 0 1.5rem;
+  font-size: 1.1rem;
 }
 .log a:hover {
   color: white;
-  padding: 10px 15px;
+  padding: 10px 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -114,7 +116,6 @@
   }
   .links a {
     padding-top: 0;
-    color: var(--mainBlack);
     margin-left: 15px;
   }
   .links a:hover {

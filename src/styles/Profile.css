@@ -16,7 +16,7 @@
   align-items: center;
 }
 .profileHeader .pageHeader {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: var(--primaryColor);
 }
 .profileHeader .logOut {
@@ -24,13 +24,13 @@
   color: var(--mainWhite);
   background: var(--secColor);
   border-radius: var(--radius);
-  padding: 8px 10px;
+  padding: 10px 20px;
   transition: var(--mainTransition);
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .profileHeader .logOut:hover {
-  padding: 8px 15px;
+  padding: 10px 25px;
 }
 .profileDetailsHeader {
   display: flex;
@@ -40,12 +40,12 @@
 }
 .profileDetailsHeader .profileDetailsText {
   color: var(--primaryColor);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .profileDetailsHeader .changePersonalDetails {
   color: var(--secColor);
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .profileCard {
   background-color: #fff;
@@ -61,7 +61,7 @@
 .profileEmail {
   border: none;
   background-color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 5px;
 }
 .profileNameActive,
@@ -69,7 +69,7 @@
   all: unset;
   background-color: rgb(245, 245, 245);
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 5px;
   color: var(--primaryColor);
 }
@@ -90,12 +90,12 @@
   color: var(--primaryColor);
 }
 .addChild p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .profile .kidText {
   color: var(--primaryColor);
   margin: 40px 0 20px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .profile .kidsList {
   width: 100%;
@@ -119,12 +119,12 @@
 }
 .itemKid .itemKidLink .itemKidDetails {
   color: var(--primaryColor);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .itemKid .itemKidLink .itemKidDetails p {
   font-family: "Fredoka One", cursive;
   text-transform: capitalize;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .itemKid .editIcon {
   margin-left: auto;
@@ -133,7 +133,7 @@
 .profile svg {
   height: 23px;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -150,15 +150,31 @@
     width: min(120ch, 100% - 1rem);
     margin-inline: auto;
   }
+  .profileHeader .pageHeader {
+    font-size: 3.1rem;
+  }
+  .profileDetailsHeader .profileDetailsText,
+  .profileDetailsHeader .changePersonalDetails,
+  .profile .kidText {
+    font-size: 1.4rem;
+  }
+  .profileName,
+  .profileEmail,
+  .profileNameActive,
+  .profileEmailActive,
+  .addChild p,
+  .itemKid .itemKidLink .itemKidDetails p {
+    font-size: 1.2rem;
+  }
   .itemKid .itemKidLink .imgBx {
     width: 200px;
     height: 200px;
   }
   .itemKid .itemKidLink .itemKidDetails p {
-    margin-top: 20px;
+    margin-top: 18px;
   }
   .profile svg {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 1200px) {

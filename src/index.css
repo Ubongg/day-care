@@ -14,9 +14,9 @@ html {
   --light-red: #e66b6b;
   --light-grey: rgb(224, 222, 222);
   --radius: 0.25rem;
-  --spacing: 0.1rem;
-  --small-spacing: 0.5px;
-  --line-height: 28px;
+  --spacing: 0.3rem;
+  --small-spacing: 0.3px;
+  --line-height: 30px;
 }
 
 body {

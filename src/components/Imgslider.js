@@ -230,6 +230,10 @@ const Wrap = styled.div`
     padding-bottom: 10px;
     color: var(--primaryColor);
     font-size: 1.2rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.4rem;
+    }
   }
   .textBx p {
     line-height: var(--line-height);

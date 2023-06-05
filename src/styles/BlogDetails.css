@@ -67,7 +67,7 @@
 .blog-details-cont .right-sec .latest-posts .post .textBx a {
   margin-bottom: 10px;
   color: var(--primaryColor);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .blog-details-cont .right-sec .latest-posts .post .textBx .date {
   color: var(--mainGrey);
@@ -78,7 +78,7 @@
   margin-right: 5px;
 }
 .blog-details-cont .right-sec .latest-posts .post .textBx .date .day {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .blog-details-cont .right-sec .free-info {
   display: flex;
@@ -130,9 +130,14 @@
     width: min(120ch, 100% - 4rem);
     margin-inline: auto;
   }
+
   .blog-details-cont .left-sec {
     width: 65%;
     margin-right: 25px;
+  }
+  .blog-details-cont .left-sec .textBx p,
+  .blog-details-cont .right-sec .free-info p {
+    font-size: 1.2rem;
   }
   .blog-details-cont .right-sec {
     width: 35%;

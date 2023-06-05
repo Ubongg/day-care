@@ -278,18 +278,31 @@ const SingleBlog = styled.div`
     padding-bottom: 20px;
     color: var(--primaryColor);
     font-size: 1.2rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.4rem;
+    }
   }
   .textBx p {
     line-height: var(--line-height);
     padding-bottom: 20px;
     color: var(--mainGrey);
+    font-size: 1.1rem;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.2rem;
+    }
   }
   .textBx a {
     color: var(--primaryColor);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     position: relative;
     font-weight: 600;
     cursor: pointer;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.2rem;
+    }
   }
   .textBx a .icon {
     position: absolute;
@@ -312,6 +325,7 @@ const SingleBlog = styled.div`
   }
   .detail .text {
     margin-left: 20px;
+    color: var(--mainGrey);
   }
   .icon1,
   .icon2 {

@@ -205,7 +205,7 @@ const EditChild = () => {
     <>
       <div className="addChildCont">
         <header>
-          <p className="pageHeader">Edit Child</p>
+          <p className="pageHeader">Edit Your Child Info</p>
         </header>
 
         <main>

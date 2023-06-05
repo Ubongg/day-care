@@ -111,7 +111,7 @@ const Profile = () => {
       <div className="profile">
         <div className="profile-cont">
           <header className="profileHeader">
-            <p className="pageHeader">My Profile</p>
+            <h3 className="pageHeader">My Profile</h3>
             <button type="button" className="logOut" onClick={onLogout}>
               Logout
             </button>
@@ -119,8 +119,8 @@ const Profile = () => {
 
           <main>
             <div className="profileDetailsHeader">
-              <p className="profileDetailsText">Personal Details</p>
-              <p
+              <h3 className="profileDetailsText">Personal Details</h3>
+              <h3
                 className="changePersonalDetails"
                 onClick={() => {
                   changeDetails && onSubmit();
@@ -128,7 +128,7 @@ const Profile = () => {
                 }}
               >
                 {changeDetails ? "done" : "change"}
-              </p>
+              </h3>
             </div>
 
             <div className="profileCard">
@@ -142,7 +142,7 @@ const Profile = () => {
                   disabled={!changeDetails}
                   value={name}
                   onChange={onChange}
-                  style={{ marginBottom: "5px" }}
+                  style={{ marginBottom: "5px", textTransform: "capitalize" }}
                 />
                 <input
                   type="text"
@@ -164,7 +164,7 @@ const Profile = () => {
 
             {!loading && kids?.length > 0 && (
               <>
-                <p className="kidText">Your Kids</p>
+                <h3 className="kidText">Your Kids</h3>
                 <ul className="kidsList">
                   {kids.map((kid) => (
                     <ChildItem

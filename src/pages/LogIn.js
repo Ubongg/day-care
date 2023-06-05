@@ -38,7 +38,7 @@ const LogIn = () => {
 
       if (userCredential.user) {
         toast.success("Signed in successfully");
-        navigate("/");
+        navigate("/profile");
       }
     } catch (error) {
       toast.error("Bad User Credentials");
@@ -59,6 +59,7 @@ const LogIn = () => {
                 id="email"
                 value={email}
                 onChange={onChange}
+                required
               ></input>
             </label>
             <label>
@@ -69,6 +70,7 @@ const LogIn = () => {
                 id="password"
                 value={password}
                 onChange={onChange}
+                required
               ></input>
             </label>
             <button className="submit">Sign In</button>

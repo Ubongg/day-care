@@ -57,7 +57,7 @@ const SignUp = () => {
 
       toast.success("Signed up successfully");
 
-      navigate("/");
+      navigate("/profile");
     } catch (error) {
       toast.error("Something went wrong with registration");
     }
@@ -85,6 +85,7 @@ const SignUp = () => {
                 id="email"
                 value={email}
                 onChange={onChange}
+                required
               ></input>
             </label>
             <label>
@@ -94,6 +95,7 @@ const SignUp = () => {
                 id="password"
                 value={password}
                 onChange={onChange}
+                required
               ></input>
             </label>
             <button className="submit">Sign Up Now</button>
