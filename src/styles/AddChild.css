@@ -63,7 +63,7 @@
   outline: none;
   border-radius: var(--radius);
   resize: none;
-  padding: 0 1rem;
+  padding: 0.9rem 1rem;
 }
 .formButton,
 .formButtonActive {
@@ -99,6 +99,7 @@
   border-radius: var(--radius);
   margin-right: 1rem;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 .addChildButton {
   display: flex;
