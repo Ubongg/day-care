@@ -57,14 +57,16 @@
   display: flex;
   flex-direction: column;
 }
+.profileCard form p {
+  color: var(--mainGrey);
+}
 .profileName,
 .profileEmail {
-  all: initial;
+  all: unset;
   border: none;
   background-color: #fff;
   font-size: 1.1rem;
   padding: 5px;
-  color: var(--mainGrey);
   letter-spacing: var(--spacing);
 }
 .profileNameActive,

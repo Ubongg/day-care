@@ -28,6 +28,7 @@ textarea {
   color: #212529;
   border: 1px solid #ced4da;
   appearance: none;
+  outline: none;
 }
 .contact form textarea {
   height: 229px;
@@ -123,7 +124,6 @@ textarea {
     padding: 10px;
     margin: 15px;
     font-size: 1.2rem;
-    outline: none;
   }
   .contact form button {
     font-size: 1.2rem;
