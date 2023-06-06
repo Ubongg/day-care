@@ -88,7 +88,7 @@
   text-align: center;
   width: 100%;
   border-radius: var(--radius);
-  height: 4rem;
+  height: auto;
 }
 .formInputFile::-webkit-file-upload-button {
   background-color: var(--secColor);
