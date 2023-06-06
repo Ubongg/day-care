@@ -1,9 +1,12 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { useEffect } from "react";
+// import {
+//   createBrowserRouter,
+//   createRoutesFromElements,
+//   Route,
+//   RouterProvider,
+//   useLocation,
+// } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -25,33 +28,34 @@ import Contact from "./pages/Contact";
 import PrivateRoute from "./components/PrivateRoute";
 import Profile from "./pages/Profile";
 import EditChild from "./pages/EditChild";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="profile" element={<PrivateRoute />}>
-        <Route index element={<Profile />} />
-      </Route>
-      <Route path="login" element={<LogIn />} />
-      <Route path="signup" element={<SignUp />} />
-      <Route path="add-kid" element={<AddChild />} />
-      <Route path="edit-kid/:kidId" element={<EditChild />} />
-      <Route path="kid/:kidId" element={<Child />} />
-      <Route path="pricing" element={<Pricing />} />
-      <Route path="team" element={<Team />} />
-      <Route path="blog" element={<Blog />} />
-      <Route path="blog/:id" element={<BlogDetails />} />
-      <Route path="contact" element={<Contact />} />
-    </Route>
-  )
-);
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <Router>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<RootLayout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="profile" element={<PrivateRoute />}>
+                <Route index element={<Profile />} />
+              </Route>
+              <Route path="login" element={<LogIn />} />
+              <Route path="signup" element={<SignUp />} />
+              <Route path="add-kid" element={<AddChild />} />
+              <Route path="edit-kid/:kidId" element={<EditChild />} />
+              <Route path="kid/:kidId" element={<Child />} />
+              <Route path="pricing" element={<Pricing />} />
+              <Route path="team" element={<Team />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="blog/:id" element={<BlogDetails />} />
+              <Route path="contact" element={<Contact />} />
+            </Route>
+          </Routes>
+        </ScrollToTop>
+      </Router>
       <ToastContainer />
     </>
   );

@@ -126,7 +126,7 @@ const Home = () => {
             </div>
           </div>
           <button>
-            <NavLink to="/login">Join Us</NavLink>
+            <NavLink to="/profile">Join Us</NavLink>
           </button>
         </div>
         <div className="img-cont">
