@@ -61,7 +61,7 @@
 .profileEmail {
   all: unset;
   border: none;
-  background-color: #fff;
+  /* background-color: #fff; */
   font-size: 1.1rem;
   padding: 5px;
   color: var(--mainGrey);
