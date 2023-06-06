@@ -133,31 +133,27 @@ const Profile = () => {
 
             <div className="profileCard">
               <form>
-                <p>
-                  <input
-                    type="text"
-                    id="name"
-                    className={
-                      !changeDetails ? "profileName" : "profileNameActive"
-                    }
-                    disabled={!changeDetails}
-                    value={name}
-                    onChange={onChange}
-                    style={{ marginBottom: "5px", textTransform: "capitalize" }}
-                  />
-                </p>
-                <p>
-                  <input
-                    type="text"
-                    id="email"
-                    className={
-                      !changeDetails ? "profileEmail" : "profileEmailActive"
-                    }
-                    disabled={!changeDetails}
-                    value={email}
-                    onChange={onChange}
-                  />
-                </p>
+                <input
+                  type="text"
+                  id="name"
+                  className={
+                    !changeDetails ? "profileName" : "profileNameActive"
+                  }
+                  disabled={!changeDetails}
+                  value={name}
+                  onChange={onChange}
+                  style={{ marginBottom: "5px", textTransform: "capitalize" }}
+                />
+                <input
+                  type="text"
+                  id="email"
+                  className={
+                    !changeDetails ? "profileEmail" : "profileEmailActive"
+                  }
+                  disabled={!changeDetails}
+                  value={email}
+                  onChange={onChange}
+                />
               </form>
             </div>
 
