@@ -14,7 +14,7 @@
 .nav-toggle {
   font-size: 1.8rem;
   padding-top: 8px;
-  color: var(--mainBlue);
+  color: var(--mainGrey);
   background: transparent;
   border-color: transparent;
   transition: var(--mainTransition);

@@ -65,7 +65,7 @@ const Profile = () => {
     auth.signOut();
     toast.success("Signed out successfully");
 
-    navigate("/login");
+    navigate("/");
   };
 
   const onSubmit = async () => {

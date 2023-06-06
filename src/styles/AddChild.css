@@ -16,12 +16,19 @@
   width: 100%;
 }
 .formLabel {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem;
   font-weight: 600;
   margin: 1.5rem 0 0.5rem;
   display: block;
   color: var(--primaryColor);
-  font-family: "Fredoka One", cursive;
+  font-family: "Fredoka One", cursive; */
+  display: block;
+  margin: 2rem 0 0.5rem;
+  letter-spacing: var(--spacing);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--mainGrey);
+  text-transform: uppercase;
 }
 .formButtons {
   display: flex;
@@ -141,7 +148,7 @@
     font-size: 3.1rem;
   }
   .formLabel {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .formInputName,
   .formInputAge,

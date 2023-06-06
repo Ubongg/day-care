@@ -63,7 +63,7 @@
   border: none;
   font-size: 1.1rem;
   padding: 5px;
-  color: var(--mainGrey);
+  color: var(--mainBlack);
 }
 .profileNameActive,
 .profileEmailActive {
@@ -84,11 +84,11 @@
   background-color: #fff;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.2);
-  color: var(--mainGrey);
+  color: var(--mainBlack);
   transition: var(--mainTransition);
 }
 .addChild:hover {
-  color: var(--primaryColor);
+  color: var(--mainGrey);
 }
 .addChild p {
   font-size: 1.1rem;
