@@ -52,10 +52,12 @@
   width: 100%;
   padding: 20px 15px;
   border-radius: 15px;
+  color: var(--mainGrey);
 }
 .profileCard form {
   display: flex;
   flex-direction: column;
+  color: var(--mainGrey);
 }
 .profileName,
 .profileEmail {
