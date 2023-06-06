@@ -51,6 +51,7 @@
   margin-right: 0.5rem;
   font-size: 1.1rem;
   width: 100%;
+  height: 3rem;
 }
 .formInputName,
 .formInputAge,
@@ -62,7 +63,7 @@
   outline: none;
   border-radius: var(--radius);
   resize: none;
-  padding: 0.9rem 1rem;
+  padding: 0 1rem;
 }
 .formButton,
 .formButtonActive {
@@ -87,6 +88,7 @@
   text-align: center;
   width: 100%;
   border-radius: var(--radius);
+  height: 4rem;
 }
 .formInputFile::-webkit-file-upload-button {
   background-color: var(--secColor);
@@ -111,6 +113,7 @@
   border: none;
   font-size: 1.1rem;
   padding: 13px;
+  text-transform: uppercase;
 }
 .addChildButton:hover {
   background: var(--secColor);
