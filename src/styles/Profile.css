@@ -131,6 +131,9 @@
   margin-left: auto;
   fill: var(--mainGrey);
 }
+.itemKid .removeIcon {
+  margin-left: 0.5rem;
+}
 .profile svg {
   height: 23px;
   cursor: pointer;

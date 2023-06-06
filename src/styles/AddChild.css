@@ -63,7 +63,7 @@
   outline: none;
   border-radius: var(--radius);
   resize: none;
-  padding: 0.9rem 1rem;
+  padding: 0.7rem;
 }
 .formButton,
 .formButtonActive {
@@ -84,7 +84,7 @@
 }
 .formInputFile {
   margin-top: 1rem;
-  padding: 0.9rem;
+  padding: 0.7rem;
   text-align: center;
   width: 100%;
   border-radius: var(--radius);

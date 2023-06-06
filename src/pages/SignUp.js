@@ -10,11 +10,9 @@ import {
 } from "firebase/auth";
 import { setDoc, doc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase.config";
-import visibilityIcon from "../assets/svg/visibilityIcon.svg";
 import Footer from "../components/Footer";
 
 const SignUp = () => {
-  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",

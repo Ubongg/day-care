@@ -4,11 +4,8 @@ import Footer from "../components/Footer";
 import { toast } from "react-toastify";
 import { NavLink, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import visibilityIcon from "../assets/svg/visibilityIcon.svg";
 
 const LogIn = () => {
-  const [toggle, setToggle] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
