@@ -41,7 +41,7 @@ const Home = () => {
             little ones.
           </p>
           <button>
-            <NavLink to="/login">Join Us</NavLink>
+            <NavLink to="/profile">Join Us</NavLink>
           </button>
         </div>
         <div className="heroImg">

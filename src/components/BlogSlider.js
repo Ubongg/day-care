@@ -54,7 +54,7 @@ const BlogSlider = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
               modi nisi consequatur.
             </p>
-            <NavLink to="/blog">
+            <NavLink to="/blog/1">
               <span className="read">Read More </span>
               <span className="icon">
                 <MdArrowRightAlt />
@@ -86,7 +86,7 @@ const BlogSlider = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
               modi nisi consequatur.
             </p>
-            <NavLink to="/blog">
+            <NavLink to="/blog/2">
               <span className="read">Read More </span>
               <span className="icon">
                 <MdArrowRightAlt />
@@ -118,7 +118,7 @@ const BlogSlider = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
               modi nisi consequatur.
             </p>
-            <NavLink to="/blog">
+            <NavLink to="/blog/3">
               <span className="read">Read More </span>
               <span className="icon">
                 <MdArrowRightAlt />
@@ -150,7 +150,7 @@ const BlogSlider = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
               modi nisi consequatur.
             </p>
-            <NavLink to="/blog">
+            <NavLink to="/blog/4">
               <span className="read">Read More </span>
               <span className="icon">
                 <MdArrowRightAlt />
@@ -182,7 +182,7 @@ const BlogSlider = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
               modi nisi consequatur.
             </p>
-            <NavLink to="/blog">
+            <NavLink to="/blog/5">
               <span className="read">Read More </span>
               <span className="icon">
                 <MdArrowRightAlt />
@@ -214,7 +214,7 @@ const BlogSlider = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
               modi nisi consequatur.
             </p>
-            <NavLink to="/blog">
+            <NavLink to="/blog/6">
               <span className="read">Read More </span>
               <span className="icon">
                 <MdArrowRightAlt />

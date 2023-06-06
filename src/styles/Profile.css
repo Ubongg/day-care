@@ -63,6 +63,7 @@
   background-color: #fff;
   font-size: 1.1rem;
   padding: 5px;
+  color: var(--mainGrey);
 }
 .profileNameActive,
 .profileEmailActive {
@@ -91,6 +92,7 @@
 }
 .addChild p {
   font-size: 1.1rem;
+  color: var(--mainGrey);
 }
 .profile .kidText {
   color: var(--primaryColor);
