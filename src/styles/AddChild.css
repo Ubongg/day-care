@@ -95,9 +95,9 @@
   border: none;
   color: #ffffff;
   font-weight: 600;
-  padding: 0.5rem 0.75rem;
+  padding: 10px 20px;
   border-radius: var(--radius);
-  margin-right: 1rem;
+  margin-right: 2rem;
   cursor: pointer;
   font-size: 1.1rem;
 }
