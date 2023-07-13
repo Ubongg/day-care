@@ -306,7 +306,7 @@ const Home = () => {
             <p>Science Classes</p>
             <p>2 Educators</p>
             <button>
-              <NavLink to="/pricing">Choose Plan</NavLink>
+              <NavLink to="/profile">Choose Plan</NavLink>
             </button>
           </div>
           <div className="textBx two">
@@ -317,7 +317,7 @@ const Home = () => {
             <p>Science Classes</p>
             <p>2 Educators</p>
             <button>
-              <NavLink to="/pricing">Choose Plan</NavLink>
+              <NavLink to="/profile">Choose Plan</NavLink>
             </button>
           </div>
           <div className="textBx three">
@@ -328,7 +328,7 @@ const Home = () => {
             <p>Science Classes</p>
             <p>2 Educators</p>
             <button>
-              <NavLink to="/pricing">Choose Plan</NavLink>
+              <NavLink to="/profile">Choose Plan</NavLink>
             </button>
           </div>
         </div>
